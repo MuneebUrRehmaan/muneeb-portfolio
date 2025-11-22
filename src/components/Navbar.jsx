@@ -62,23 +62,22 @@ const Navbar = () => {
             {isOpen && (
     <div className="mobile-nav fixed top-25 left-0 w-screen bg-[#fafaf1] border-b border-gray-100 shadow-lg md:hidden flex flex-col py-4 px-4 space-y-4">
         {nav_links.map((link) => (
-            <a
+            <Link to={link.href}
                 key={link.label}
-                href={link.href}
                 className="text-2xl text-center font-semibold text-gray-700 hover:text-black py-2 border-b border-gray-50 last:border-none"
                 onClick={() => setIsOpen(false)}
             >
                 {link.label}
-            </a>
+            </Link>
         ))}
 
-        <a
-            href="#contact"
+        <Link
+            to='muneeb-portfolio/contact'
             className="text-center w-full bg-black text-white py-3 rounded-full font-medium mt-2"
             onClick={() => setIsOpen(false)}
         >
             Contact
-        </a>
+        </Link>
     </div>
 )}
 

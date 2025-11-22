@@ -12,11 +12,11 @@ const Hero = () => {
 
                 {/* Central Image */}
                 <div className="absolute inset-0">
-                    <div className="h-full w-full">
+                    <div className="h-full  w-full">
                         <img
                             src={profile}
                             alt="Portrait of Madison"
-                            className="w-full md:h-[110vh] object-cover  object-top md:object-contain mix-blend-normal mask-image-gradient"
+                            className="w-full max-md:w-full max-md:ml-20 h-[110vh] max-md:h-screen object-cover  object-top md:object-contain mix-blend-normal mask-image-gradient"
                             style={{
                                 maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)',
                                 WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)'
@@ -30,7 +30,7 @@ const Hero = () => {
 
                 {/* Main info */}
                 <div className=" flex flex-col gap-4  z-20 absolute max-md:relative max-md:h-[67vh]   max-md:justify-between   bottom-4  ">
-                    <div className="w-fit flex  items-center gap-3 max-md:bg-white/80 backdrop-blur-sm pl-2 pr-5 py-1 rounded-full shadow-sm border border-white/50">
+                    <div className="w-fit flex  items-center gap-3 max-md:bg-white/80 backdrop-blur-sm pl-2 pr-5  rounded-full shadow-sm border border-white/50">
                         <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-orange-50/20">
                             <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-orange-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-orange-500"></span>
@@ -42,10 +42,10 @@ const Hero = () => {
 
                     <div className="relative z-20 ">
                         <div className="flex flex-col leading-none select-none">
-                            <span className="font-display font-bold text-8xl max-sm:text-7xl drop-shadow-sm shadow-gray-200  text-black uppercase tracking-tighter transform md:translate-y-4">
+                            <span className="font-display font-bold text-8xl max-sm:text-5xl  drop-shadow-xs  max-md:drop-shadow-gray-300  text-black   uppercase tracking-tighter transform md:translate-y-4">
                                 I AM
                             </span>
-                            <span className="font-display font-bold text-8xl max-sm:text-7xl drop-shadow-sm shadow-gray-200  text-black uppercase tracking-tighter">
+                            <span className="font-display font-bold text-8xl max-sm:text-5xl drop-shadow-xs  max-md:drop-shadow-gray-300    text-black  uppercase tracking-tighter">
                                 Muneeb
                             </span>
                         </div>
@@ -53,15 +53,15 @@ const Hero = () => {
 
                 </div>
 
-                <div className='flex flex-col  gap-15 z-20 absolute  bottom-4 max-md:bottom-0  md:right-25 max-md:left-1 max-md:ml-4   '>
+                <div className='lbg flex flex-col  gap-15 z-20 absolute  bottom-4 max-md:bottom-0  md:right-25 max-md:left-1 max-md:ml-4   '>
                     <div className="relative z-20 max-w-[280px] text-left max-sm:hidden">
                         <p className="text-medium font text-gray-800 leading-[1.4]">
                             {hero.description}
                         </p>
                     </div>
                     <div className="relative z-20 flex flex-col items-start ">
-                        <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-4xl text-black/90 uppercase leading-none max-w-xs md:max-w-md text-left  tracking-tight">
-                            Creative <br /> Website <br /> Desveloper
+                        <h2 className="font-display font-bold text-3xl max-sm:text-2xl md:text-5xl  drop-shadow-xs  max-md:drop-shadow-gray-300 lg:text-4xl text-black/90 uppercase leading-none max-w-xs md:max-w-md text-left  tracking-tight">
+                            Creative <br /> Website <br /> Developer
                         </h2>
                     </div>
                 </div>

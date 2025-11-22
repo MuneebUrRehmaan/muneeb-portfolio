@@ -53,7 +53,7 @@ const About = () => {
               muted
               playsInline
               className="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"
-              poster="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000&auto=format&fit=crop"
+              
             >
               <source src={yo} type="video/mp4" />
               Your browser does not support the video tag.

@@ -3,11 +3,11 @@ import { projects } from '../constants';
 
 const Projects = () => {
     return (
-        <section className="w-full bg-cream pt-24 pb-24 px-4 md:px-8" id="works">
+        <section className="w-full bg-cream pt-24 pb-24 px-4 md:px-8" >
             <div className="max-w-7xl mx-auto">
 
                 {/* Section Header */}
-                <h2 className="font-display text-5xl max-md:text-4xl font-bold text-center mb-16 uppercase tracking-tight text-black">
+                <h2 id="works" className="font-display text-5xl max-md:text-4xl font-bold text-center mb-16 uppercase tracking-tight text-black">
                     All Projects
                 </h2>
 

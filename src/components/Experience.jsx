@@ -37,13 +37,13 @@ const Experience = () => {
 
               {/* Skills */}
               <div className="w-full md:w-2/5">
-                <div className="flex flex-wrap gap-x-6 gap-y-2 md:justify-end">
+                <div className="flex flex-wrap gap-x-2 gap-y-2 md:justify-end">
                   {item.skills.map((skill, i) => (
                     <span
                       key={i}
                       className="relative text-sm max-md:text-base font-medium text-gray-600 group-hover:text-black transition-colors"
                     >
-                      <span className="mr-2 text-orange-400">•</span>
+                      <span className="mr-1 text-orange-400">•</span>
                       {skill}
                     </span>
                   ))}

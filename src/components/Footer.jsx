@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Heart } from 'lucide-react';
 import {  contact, nav_links, social } from '../constants';
+import { Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -53,9 +54,9 @@ const Footer = () => {
              <ul className="space-y-4">
                 {nav_links.map(link => (
                   <li key={link.label}>
-                    <a href={link.href} className="text-gray-400 hover:text-white transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
+                    <Link to={link.href} className="text-gray-400 hover:text-white transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
              </ul>

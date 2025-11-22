@@ -14,7 +14,7 @@ const RecentProjects = () => {
                 </h2>
 
                 {/* Projects Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mb-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mb-20 max-sm:mb-10">
                     {projects.map((project) => {
                         if (project.id <= 4) {
                             return (
@@ -81,8 +81,8 @@ const RecentProjects = () => {
                 {/* View All Button */}
                 <div className="flex justify-center w-full">
                     <Link
-                        to="/projects"
-                        className="group relative inline-flex items-center gap-3 px-10 py-4 bg-transparent border border-black rounded-full overflow-hidden transition-all duration-300 hover:bg-black hover:text-white hover:px-12 hover:shadow-xl"
+                        to="muneeb-portfolio/projects"
+                        className="group relative inline-flex items-center gap-3 px-10 py-3 bg-transparent border border-black rounded-full overflow-hidden transition-all duration-300 hover:bg-black active:bg-black hover:text-white active:text-white hover:px-12 hover:shadow-xl"
                     >
                         <span className="font-display font-bold text-lg uppercase tracking-widest">
                             View All Projects

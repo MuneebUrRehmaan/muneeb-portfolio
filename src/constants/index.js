@@ -189,7 +189,7 @@ export const social = [
 ];
 
 export const contact = {
-  email: 'hello@portfolio.dev'
+  email: 'muneebrahman28185'
 };
 
 export const faq_data = [

@@ -54,7 +54,7 @@ const Talk = () => {
                         <div className="pt-4">
                             <button
                                 type="submit"
-                                className="px-12 py-4 bg-white border border-black rounded-full text-black font-bold text-lg hover:bg-black hover:text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
+                                className="px-6 py-2 bg-white border border-gray-400 rounded-full text-black font-bold text-lg hover:bg-black hover:text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
                             >
                                 Submit
                             </button>
