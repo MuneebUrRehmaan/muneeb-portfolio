@@ -51,8 +51,7 @@ const About = () => {
               autoPlay
               loop
               muted
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"
+              className="absolute inset-0 w-full h-full object-cover transform "
               
             >
               <source src={yo} type="video/mp4" />
