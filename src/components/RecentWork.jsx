@@ -23,7 +23,7 @@ const RecentProjects = () => {
                                     className="group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-100 shadow-sm border border-gray-200"
                                 >
                                     {/* Image */}
-                                    <div className="aspect-4/3 md:aspect-5/3 overflow-hidden">
+                                    <div className=" md:aspect-4/2 overflow-hidden">
                                         <img
                                             src={project.image}
                                             alt={project.title}
@@ -31,43 +31,24 @@ const RecentProjects = () => {
                                         />
 
                                     </div>
-
-                                    <div className="absolute max-sm:flex hidden  inset-0  flex-col justify-end p-6 bg-linear-to-t from-black/50 via-black/10 to-transparent  max-md:hidden">
-
-                                        {/* Slide Up Content */}
-                                        <div className="">
-                                            {/* Actions */}
-                                            <div className="flex items-center justify-between pt-5">
-
-                                                <h3 className="text-white font-display text-lg  font-semibold uppercase leading-none tracking-wide">
-                                                    {project.title}
-                                                </h3>
-
-                                                {/* Visit Website */}
-                                                <button className="bg-white text-black px-4 py-1 rounded-full text-medium font-semibold active:bg-gray-200  tracking-wide hover:bg-gray-200 transition-colors">
-                                                    view
-                                                </button>
-                                            </div>
-
-                                        </div>
-                                    </div>
+   
                                     {/* Overlay */}
-                                    <div className="absolute max-sm:hidden   inset-0 flex flex-col justify-end p-6 md:p-8 bg-linear-to-t from-black/50 via-black/10 to-transparent opacity-0  group-hover:opacity-100 transition-opacity duration-500 max-md:hidden">
+                                    <div className="flex flex-col justify-end p-6 bg-[#f3efde] ">
 
                                         {/* Slide Up Content */}
-                                        <div className="transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                                            {/* Actions */}
-                                            <div className="flex items-center justify-between pt-5">
+                                        <div><h5 className='text-sm  text-[#e5b850]'>Hotel management website</h5></div>
 
-                                                <h3 className="text-white font-display text-2xl  font-bold uppercase leading-none tracking-wide">
-                                                    {project.title}
-                                                </h3>
+                                        <div className="flex items-center justify-between pt-2 gap-2 ">
 
-                                                {/* Visit Website */}
-                                                <button className="bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wide hover:bg-gray-200 transition-colors">
-                                                    View Site
-                                                </button>
-                                            </div>
+                                            <h3 className="text-black font-display text-2xl max-sm:text-xl  font-semibold uppercase leading-none tracking-wide">
+                                                {project.title}
+                                            </h3>
+
+                                            {/* Visit Website */}
+                                            <button className=" border-gray-400 border text-black px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wide active:bg-[#f1f1f1] hover:bg-[#f1f1f1] bg-white cursor-pointer  transition-colors whitespace-nowrap">
+                                                View Site
+                                            </button>
+
 
                                         </div>
                                     </div>

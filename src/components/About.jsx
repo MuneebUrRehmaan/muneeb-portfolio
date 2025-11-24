@@ -51,7 +51,7 @@ const About = () => {
               autoPlay
               loop
               muted
-              className="absolute inset-0 w-full h-full object-cover transform "
+              className=" w-full h-full object-cover "
               
             >
               <source src={yo} type="video/mp4" />
@@ -62,12 +62,8 @@ const About = () => {
 
         
           </div>
-
           {/* Background dots & decor */}
-          <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-orange-200/20 rounded-full -z-10 blur-2xl" />
-
-          
-
+          {/* <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-orange-200/20 rounded-full -z-10 blur-2xl" /> */}
         </div>
 
       </div>

@@ -52,12 +52,11 @@ const Talk = () => {
                         </div>
 
                         <div className="pt-4">
-                            <button
+                            <input
                                 type="submit"
-                                className="px-6 py-2 bg-white border border-gray-400 rounded-full text-black font-bold text-lg hover:bg-black hover:text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
-                            >
-                                Submit
-                            </button>
+                                className="px-6 py-2 bg-white border border-gray-400 rounded-full text-black font-bold text-lg hover:bg-black hover:text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0 cursor-pointer"
+                            />
+                            
                         </div>
                     </form>
                 </div>

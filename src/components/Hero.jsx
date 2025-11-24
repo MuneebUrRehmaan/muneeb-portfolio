@@ -3,7 +3,7 @@ import { hero, profile } from '../constants';
 
 const Hero = () => {
     return (
-        <section id='home' className="relative min-h-screen w-full overflow-hidden bg-cream flex flex-col justify-end pt-24 pb-10 md:pb-0">
+        <section id='home' className="relative min-h-screen w-full overflow-hidden flex flex-col justify-end pt-24 pb-10 md:pb-0">
             {/* Background Gradient Spot */}
            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-yellow-200/30 rounded-full blur-[120px] pointer-events-none z-0" />
 
@@ -16,7 +16,7 @@ const Hero = () => {
                         <img
                             src={profile}
                             alt="Portrait of Madison"
-                            className="w-full max-md:w-full max-md:ml-20 h-[110vh] max-md:h-screen object-cover  object-top md:object-contain mix-blend-normal mask-image-gradient"
+                            className="w-full max-md:ml-20 lg:h-screen max-md:h-screen object-cover  object-top md:object-contain mix-blend-normal mask-image-gradient"
                             style={{
                                 maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)',
                                 WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)'
@@ -54,7 +54,7 @@ const Hero = () => {
                 </div>
 
                 <div className='lbg flex flex-col  gap-15 z-20 absolute  bottom-4 max-md:bottom-0  md:right-25 max-md:left-1 max-md:ml-4   '>
-                    <div className="relative z-20 max-w-[280px] text-left max-sm:hidden">
+                    <div className="relative z-20 max-w-[280px] text-left max-md:hidden">
                         <p className="text-medium font text-gray-800 leading-[1.4]">
                             {hero.description}
                         </p>
