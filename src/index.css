@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
+html{
+   scroll-behavior: smooth;
+}
 body{
   overflow-x: hidden;
-  scroll-behavior: smooth;
+ 
 }
 
 .experience-section {

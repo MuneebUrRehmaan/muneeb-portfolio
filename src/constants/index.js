@@ -7,12 +7,17 @@ import pj1 from '../assets/pj1.png'
 import pj2 from '../assets/pj2.png'
 import pj3 from '../assets/pj3.png'
 import pj4 from '../assets/pj4.png'
+import pj5 from '../assets/pj5.png'
+import pj6 from '../assets/pj6.png'
+import pj7 from '../assets/pj7.png'
+import pj8 from '../assets/pj8.png'
 import ws1 from '../assets/ws1.png'
 import ws2 from '../assets/ws2.png'
 import ws3 from '../assets/ws3.png'
 import ws4 from '../assets/ws4.png'
 import ws5  from '../assets/ws5.png'
 import ws6  from '../assets/ws6.png'
+import ppi from '../assets/ppi.png'
 
 // Navigation Links
 export const nav_links = [
@@ -65,47 +70,47 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Nikey",
-    category: "Shoe commerce",
+    title: "Weather Web",
+    category: "Weather Website",
     image: pj3,
-    link: "https://muneeb786-byte.github.io/Nikey-Shoes-Web/",
+    link: "https://muneeb786-byte.github.io/weatherapp/",
     code: 'https://github.com/muneeb786-byte/Nikey-Shoes-Web'
   },
   {
     id: 4,
     title: "Gallery",
     category: "Gallery project",
-    image: pj4,
+    image: pj5,
     link: "https://muneeb786-byte.github.io/gallery-project/",
     code: 'https://github.com/muneeb786-byte/gallery-project'
   },
   {
     id: 5,
-    title: "Residing Room App",
+    title: "Portfolio",
     category: "Mobile Application",
-    image: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=1000&auto=format&fit=crop",
-    link: "#"
+    image: pj4,
+    link: "https://muneeb786-byte.github.io/portfolio/"
   },
   {
     id: 6,
-    title: "Morsel File Manager",
-    category: "UI/UX Design",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
-    link: "#"
+    title: "Nikey Shoes Web",
+    category: "Shoe Commerce",
+    image: pj6,
+    link: "https://muneeb786-byte.github.io/Nikey-Shoes-Web/"
   },
   {
     id: 7,
-    title: "Lumina Smart Home",
-    category: "IoT Interface",
-    image: "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "#"
+    title: "Image Gallery",
+    category: "Gallery",
+    image: pj7,
+    link: "https://muneeb786-byte.github.io/Gaallery/"
   },
   {
     id: 8,
-    title: "Apex Finance Dashboard",
-    category: "Web Platform",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-    link: "#"
+    title: "Lead Wave ",
+    category: "Agency website",
+    image:pj8,
+    link: "https://muneeb786-byte.github.io/Lead-Wave-/"
   }
 ];
 
@@ -240,5 +245,6 @@ export{
   profile2,
   avater,
   bghero,
-  pj1
+  pj1,
+  ppi
 }

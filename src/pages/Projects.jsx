@@ -20,7 +20,8 @@ const Projects = () => {
                                 className="group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-100 shadow-md border border-gray-200"
                             >
                                 {/* Image */}
-                                <div className=" md:aspect-4/2 overflow-hidden">
+                                <div className=" md:aspect-4/2 overflow-hidden"  onMouseEnter={() => window.dispatchEvent(new Event("cursor-hover-button"))}
+                                        onMouseLeave={() => window.dispatchEvent(new Event("cursor-hover-leave"))}>
                                     <img
                                         src={project.image}
                                         alt={project.title}
@@ -34,7 +35,7 @@ const Projects = () => {
                                 <div className="flex flex-col justify-end p-6 bg-[#f3efde] ">
 
                                     {/* Slide Up Content */}
-                                    <div><h5 className='text-sm  text-[#e5b850]'>Hotel management website</h5></div>
+                                    <div><h5 className='text-sm  text-[#e5b850]'>{project.category}</h5></div>
 
                                     <div className="flex items-center justify-between pt-2 gap-2 ">
 
@@ -43,9 +44,9 @@ const Projects = () => {
                                         </h3>
 
                                         {/* Visit Website */}
-                                        <a href={project.code}></a>
+                                        <a href={project.link}></a>
                                         <button className=" border-gray-400 border text-black px-6 py-3 rounded-full text-sm font-semibold capitalize tracking-wide active:bg-slate-950 hover:bg-slate-950 active:text-white hover:text-white bg-white cursor-pointer  transition-colors whitespace-nowrap">
-                                            View Code
+                                            View Site
                                         </button>
                                     </div>
                                 </div>

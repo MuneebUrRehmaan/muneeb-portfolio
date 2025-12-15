@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { nav_links } from '../constants';
+import { nav_links, ppi } from '../constants';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom'
 
@@ -7,6 +7,10 @@ const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+
+    const hash = ()=>{
+      window.scrollTo(0, 0)
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,17 +26,17 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex items-center justify-between">
                     <div className="shrink-0">
-                        <a
-                            href="#"
-                            className="font-serif text-2xl  font-bold italic tracking-tight text-gray-900">
-                            Muneeb
-                        </a>
+                        <img
+                            src={ppi}
+                            className="w-29"
+                            />
+                        
                     </div>
 
 
                     <div className="hidden md:flex items-center justify-center gap-8">
                         {nav_links.map((link, idx) => (
-                            <Link key={idx} className="text-medium font-lg   text-slate-700 hover:text-black transition-colors duration-200" to={link.href} >
+                            <Link key={idx} onClick={()=>{hash()}} className="text-medium font-lg   text-slate-700 hover:text-black transition-colors duration-200" to={link.href} >
                                 {link.label}
                             </Link>
                         ))}
@@ -41,6 +45,7 @@ const Navbar = () => {
                     {/* CTA Button */}
                     <div className="hidden md:block">
                         <Link
+                            onClick={()=>{hash()}}
                             className="z-12 inline-block px-6 py-2.5 bg-black text-white border border-gray-400 text-sm font-medium rounded-full hover:bg-white hover:text-black active:bg-slate-950 active:text-white transition-all duration-300 hover:-translate-y-0.5"
                             to='muneeb-portfolio/contact'
                         >
@@ -91,10 +96,11 @@ const Navbar = () => {
                         <div>
                         <ul>
                         <li><a>
-                        <Link to={link.href}
+                        <Link to={link.href} 
+                        
                             key={link.label}
                             className=""
-                            onClick={() => setIsOpen(false)}
+                            onClick={() => {setIsOpen(false), hash()}}
                         >
                             {link.label}
                         </Link> </a></li>
@@ -104,7 +110,7 @@ const Navbar = () => {
                     ))} <Link
                         to='muneeb-portfolio/contact'
                         className=""
-                        onClick={() => setIsOpen(false)}
+                        onClick={() => {setIsOpen(false), hash()}}
                     >
                         Contact
                     </Link> </div>

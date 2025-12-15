@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { projects } from '../constants';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -6,6 +6,19 @@ import { Link } from 'react-router-dom';
 
 
 const RecentProjects = () => {
+
+    const [recentWork, setRecentWork] = useState([])
+
+   const hash = ()=>{
+      window.scrollTo(0, 0)
+    }
+
+    useEffect(() => {
+    
+      setRecentWork(projects.slice(0, 4))
+
+    }, [])
+    
 
 
     return (
@@ -20,8 +33,8 @@ const RecentProjects = () => {
                 {/* Projects Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mb-20 max-sm:mb-10">
 
-                    {projects.map((project) => {
-                        if (project.id <= 4) {
+                    {recentWork.map((project) => {
+                     {
                             return (
 
                                 <div
@@ -57,9 +70,9 @@ const RecentProjects = () => {
                                             </h3>
 
                                             {/* Visit Website */}
-                                            <a href={project.code} target='_blank'>
+                                            <a href={project.link} target='_blank'>
                                             <button className=" border-gray-400 border text-black transition-colors px-6 py-3 rounded-full text-sm font-semibold uppercase tracking-wide active:bg-slate-950 hover:bg-slate-950 hover:text-white active:text-white bg-white cursor-pointer whitespace-nowrap">
-                                                View Code
+                                                View Site
                                             </button> </a>
 
 
@@ -77,7 +90,8 @@ const RecentProjects = () => {
                 {/* View All Button */}
                 <div className="flex justify-center w-full">
                     <Link
-                        to="projects/#works"
+                        onClick={()=>{hash()}}
+                        to="projects#works"
                         className="group relative inline-flex items-center gap-3 px-10 py-3 bg-transparent border border-black rounded-full overflow-hidden transition-all duration-300 hover:bg-black active:bg-black hover:text-white active:text-white hover:px-12 hover:shadow-xl"
                     >
                         <span className="font-display font-bold text-lg uppercase tracking-widest">
