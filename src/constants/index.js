@@ -57,60 +57,60 @@ export const projects = [
     title: "Novashop",
     category: "E Commerce",
     image: pj1,
-    link: "https://muneeb786-byte.github.io/NovaShop.co/",
-    code: 'https://github.com/muneeb786-byte/NovaShop.co'
+    link: "https://muneeburrehmaan.github.io/NovaShop.co/",
+    code: 'https://github.com/muneeburrehmaan/NovaShop.co'
   },
   {
     id: 2,
     title: "Aurelia A Luxery Hotel",
     category: "Hotel Managment",
     image: pj2,
-    link: "https://muneeb786-byte.github.io/Aurelia/",
-    code: 'https://github.com/muneeb786-byte/Aurelia'
+    link: "https://muneeburrehmaan.github.io/Aurelia/",
+    code: 'https://github.com/muneeburrehmaan/Aurelia'
   },
   {
     id: 3,
     title: "Weather Web",
     category: "Weather Website",
     image: pj3,
-    link: "https://muneeb786-byte.github.io/weatherapp/",
-    code: 'https://github.com/muneeb786-byte/Nikey-Shoes-Web'
+    link: "https://muneeburrehmaan.github.io/weatherapp/",
+    code: 'https://github.com/muneeburrehmaan/Nikey-Shoes-Web'
   },
   {
     id: 4,
     title: "Gallery",
     category: "Gallery project",
     image: pj5,
-    link: "https://muneeb786-byte.github.io/gallery-project/",
-    code: 'https://github.com/muneeb786-byte/gallery-project'
+    link: "https://muneeburrehmaan.github.io/gallery-project/",
+    code: 'https://github.com/muneeburrehmaan/gallery-project'
   },
   {
     id: 5,
     title: "Portfolio",
     category: "Mobile Application",
     image: pj4,
-    link: "https://muneeb786-byte.github.io/portfolio/"
+    link: "https://muneeburrehmaan.github.io/portfolio/"
   },
   {
     id: 6,
     title: "Nikey Shoes Web",
     category: "Shoe Commerce",
     image: pj6,
-    link: "https://muneeb786-byte.github.io/Nikey-Shoes-Web/"
+    link: "https://muneeburrehmaan.github.io/Nikey-Shoes-Web/"
   },
   {
     id: 7,
     title: "Image Gallery",
     category: "Gallery",
     image: pj7,
-    link: "https://muneeb786-byte.github.io/Gaallery/"
+    link: "https://muneeburrehmaan.github.io/Gaallery/"
   },
   {
     id: 8,
     title: "Lead Wave ",
     category: "Agency website",
     image:pj8,
-    link: "https://muneeb786-byte.github.io/Lead-Wave-/"
+    link: "https://muneeburrehmaan.github.io/Lead-Wave-/"
   }
 ];
 
