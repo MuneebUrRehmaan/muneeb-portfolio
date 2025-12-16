@@ -246,5 +246,11 @@ export{
   avater,
   bghero,
   pj1,
-  ppi
+  ppi,
+  ws1,
+  ws2,
+  ws3,
+  ws4,
+  ws5,
+  ws6
 }

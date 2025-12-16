@@ -16,12 +16,11 @@ const Experience = () => {
 
         {/* Experience List */}
         <div className="flex flex-col"
-
+          onMouseEnter={() => window.dispatchEvent(new Event("cursor-hover-images"))}
+          onMouseLeave={() => window.dispatchEvent(new Event("cursor-hover-leave"))}
         >
           {experience.map((item, index) => (
             <div
-              onMouseEnter={() => window.dispatchEvent(new Event("cursor-hover-images"))}
-              onMouseLeave={() => window.dispatchEvent(new Event("cursor-hover-leave"))}
               key={index}
               className="group flex flex-col md:flex-row items-start md:items-center py-3 md:py-8 border-b border-gray-200 hover:border-gray-400 transition-colors duration-300"
             >

@@ -28,12 +28,12 @@ const Hero = () => {
     })
   })
     return (
-        <section id='home' className="relative min-h-screen w-full overflow-hidden flex flex-col justify-end pt-24 pb-10 md:pb-0">
+        <section id='home' className=" relative min-h-screen w-full overflow-hidden flex flex-col justify-end pt-24 pb-10 md:pb-0">
             {/* Background Gradient Spot */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-yellow-50/90 rounded-full blur-[120px] pointer-events-none z-1" />
-            <img src={bghero} alt="" className='absolute top-0 w-screen h-full z-0' />
+            <div className=" absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-yellow-50/60 rounded-full blur-[120px] pointer-events-none z-1" />
+            <img src={bghero} alt="" className='absolute top-0 w-screen h-screen z-0' />
             {/* Main Content Container */}
-            <div className="relative z-10  mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:block h-full grow">
+            <div className="max-w-7xl relative z-10  mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:block h-full grow">
 
                 {/* Central Image */}
                 <div className="absolute inset-0">
@@ -42,7 +42,7 @@ const Hero = () => {
                             ref={imgRef}
                             src={profile2}
                             alt="Portrait of Madison"
-                            className="w-full max-md:ml-20 max-sm:ml-30 lg:h-[90vh] max-md:h-[90vh]  object-cover  object-top md:object-contain mix-blend-normal mask-image-gradient"
+                            className="w-full max-md:ml-20 max-sm:ml-30 lg:h-[90vh] max-md:h-[90vh] h-full  object-cover  object-top md:object-contain mix-blend-normal mask-image-gradient"
                             style={{
                                 maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)',
                                 WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)'
