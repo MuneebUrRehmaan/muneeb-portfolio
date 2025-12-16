@@ -23,31 +23,31 @@ const Talk = () => {
                 <div className="lg:col-span-2">
                     <form className="space-y-4">
                         <div className="space-y-2">
-                            <label htmlFor="name" className="text-base font-medium text-gray-900 block ml-1">Full Name</label>
+                            <label htmlFor="name" className="text-base font-medium text-gray-900 block ">Full Name</label>
                             <input
                                 type="text"
                                 id="name"
                                 placeholder="John Doe"
-                                className="w-full h-14 px-6 rounded-2xl border border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
+                                className="w-full h-14 px-6 rounded border border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
                             />
                         </div>
 
                         <div className="space-y-2">
-                            <label htmlFor="email" className="text-base font-medium text-gray-900 block ml-1">Email</label>
+                            <label htmlFor="email" className="text-base font-medium text-gray-900 block ">Email</label>
                             <input
                                 type="email"
                                 id="email"
                                 placeholder="john@example.com"
-                                className="w-full h-14 px-6 rounded-2xl border border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
+                                className="w-full h-14 px-6 roundedborder border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
                             />
                         </div>
 
                         <div className="space-y-2">
-                            <label htmlFor="message" className="text-base font-medium text-gray-900 block ml-1">Message</label>
+                            <label htmlFor="message" className="text-base font-medium text-gray-900 block ">Message</label>
                             <textarea
                                 id="message"
                                 placeholder="Tell me about your project..."
-                                className="w-full h-48 p-6 rounded-2xl border border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900 resize-none  hover:border-gray-300"
+                                className="w-full h-48 p-6 rounded border border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900 resize-none  hover:border-gray-300"
                             />
                         </div>
 
@@ -63,7 +63,7 @@ const Talk = () => {
 
                 {/* Right Side */}
                 <div className="lg:col-span-1">
-                    <div className="bg-white rounded-[2.5rem] p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-200 h-full flex flex-col">
+                    <div className="bg-white rounded p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-200 h-full flex flex-col">
 
                         {/* Availability */}
                         <div className="inline-flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full mb-10 w-fit self-start border border-gray-200">

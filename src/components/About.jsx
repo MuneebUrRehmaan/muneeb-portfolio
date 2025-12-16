@@ -45,7 +45,7 @@ const About = () => {
 
         {/* Right Side: Video */}
         <div className="order-1 lg:order-2 relative">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl w-auto h-105 max-sm:h-60   group">
+          <div className="relative rounded overflow-hidden shadow-2xl w-auto h-105 max-sm:h-60   group">
 
             <video
               autoPlay
