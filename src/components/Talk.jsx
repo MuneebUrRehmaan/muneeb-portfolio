@@ -55,7 +55,7 @@ const Talk = () => {
                         <div className="pt-4">
                             <button
                                 type="submit"
-                            ><Button title={'Submit'} className={'bg-gray-50 text-gray-50'}/></button>
+                            ><Button title={'Submit'} className={'bg-[#1b1b1b] text-gray-50'}/></button>
                             
                         </div>
                     </form>

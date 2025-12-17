@@ -45,7 +45,7 @@ const RecentProjects = () => {
                         to="projects#works"
                         
                     >
-                      <Button title={"VIEW ALL PROJECTS"} className={'pt-4 pb-4 pl-8 pr-8 text-gray-50 bg-slate-900'}/>
+                      <Button title={"VIEW ALL PROJECTS"} className={'pt-4 pb-4 pl-8 pr-8 text-gray-50 bg-[#1b1b1b]'}/>
                     </Link>
                 </div>
             </div>

@@ -28,7 +28,7 @@ const Hero = () => {
     })
   })
     return (
-        <section id='home' className=" relative min-h-screen w-full overflow-hidden flex flex-col justify-end pt-24 pb-10 md:pb-0">
+        <section id='home' className=" relative min-h-screen w-full overflow-hidden flex flex-col justify-end pt-20 pb-10 md:pb-0">
             {/* Background Gradient Spot */}
             <div className=" absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px]  rounded-full blur-[120px] pointer-events-none z-1" />
             <img src={bghero} alt="" className='absolute top-0 w-screen h-screen z-0' />
@@ -43,10 +43,7 @@ const Hero = () => {
                             src={profile2}
                             alt="Portrait of Madison"
                             className="w-full max-md:ml-20 max-sm:ml-30 lg:h-[90vh] max-md:h-[90vh] h-full  object-cover  object-top md:object-contain mix-blend-normal mask-image-gradient"
-                            style={{
-                                maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)',
-                                WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)'
-                            }}
+                            
                         />
                     </div>
                 </div>

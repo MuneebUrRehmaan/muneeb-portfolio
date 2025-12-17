@@ -16,7 +16,7 @@ const CircularTextBadge = ({ text, className = '' }) => {
           />
           <text className="text-[11px] font-medium tracking-[0.15em] uppercase fill-gray-900">
             <textPath href="#circlePath" startOffset="0%">
-              {text} • {text} •
+              {text} • {text} 
             </textPath>
           </text>
         </svg>

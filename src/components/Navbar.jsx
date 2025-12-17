@@ -46,7 +46,7 @@ const Navbar = () => {
                                 onClick={() => { hash() }}
                                 to='muneeb-portfolio/contact'
                             >
-                                <Button title={'Contact'} className={'text-gray-50 bg-slate-900'}  />
+                                <Button title={'Contact'} className={'text-gray-50 bg-[#212121]'}  />
                             </Link>
                         </div>
                         {/* Mobile Menu Button */}

@@ -73,10 +73,10 @@ const Footer = () => {
              <ul className="grid grid-cols-2 gap-x-4 gap-y-4">
                 {social.map(link => (
                   <li key={link.label}>
-                    <a href={link.href} className="text-gray-400 hover:text-orange-200 transition-colors duration-200 text-base font-medium flex items-center gap-2 group">
+                    <Link to={link.href} target='_blank' className="text-gray-400 hover:text-orange-200 transition-colors duration-200 text-base font-medium flex items-center gap-2 group">
                       {link.label}
                       <ArrowUpRight size={16} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
-                    </a>
+                    </Link>
                   </li>
                 ))}
              </ul>

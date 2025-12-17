@@ -121,8 +121,8 @@ export const about = {
   description:
     "With a deep passion for the MERN stack, I've dedicated my career to building scalable, high-performance web applications. My journey began with a curiosity for how things work on the web and evolved into a full-blown obsession with React, Node.js, and modern UI architecture. I love turning complex problems into simple, beautiful, and intuitive interface designs.",
   stats: [
-    { label: "Years Experience", value: "05+" },
-    { label: "Projects Done", value: "42+" },
+    { label: "Years Experience", value: "03+" },
+    { label: "Projects Done", value: "30+" },
     { label: "Hours Worked", value: "8K+" }
   ],
   videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-typing-on-mechanical-keyboard-4249-large.mp4",
@@ -204,10 +204,10 @@ export const workstation = [
 ];
 
 export const social = [
-  { label: 'LinkedIn', href: '#' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/muneeb-ur-rehman-3aa98a27a/' },
   { label: 'Twitter', href: '#' },
   { label: 'Instagram', href: '#' },
-  { label: 'GitHub', href: '#' }
+  { label: 'GitHub', href: 'https://github.com/MuneebUrRehmaan' }
 ];
 
 export const contact = {

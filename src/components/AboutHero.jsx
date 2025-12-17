@@ -2,6 +2,7 @@ import React from 'react';
 import CircularTextBadge  from './CircularTextBadge';
 import { profile } from '../constants';
 import Button from './Button';
+import TextType from './TextType';
 
 const AboutHero = () => {
   return (
@@ -30,19 +31,26 @@ const AboutHero = () => {
 
       {/* Right Column: Text Content */}
       <div className="w-full lg:w-2/3 flex flex-col items-start text-left space-y-4 pt-10 lg:pt-0">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.1] tracking-tight text-gray-900">
-          A <span className="text-orange-400/90">creative developer</span>
-          <br className="hidden md:block" />
-          &amp; digital designer
+        <h1 className="text-6xl max-md:text-4xl lg:text-7xl font-semibold leading-[1.3] tracking-tight text-gray-900">
+          A <span className="text-orange-400/90 max-sm:text-[34px]">
+          <TextType
+                                text={["Frontend Developer", "Backend Developer", "FullStack Developer"]}
+                                typingSpeed={75}
+                                pauseDuration={1500}
+                                showCursor={true}
+                                cursorCharacter=""
+                            /></span>
+          <br className="" />
+          &amp; Digital Designer
         </h1>
 
-        <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg">
+        <p className="text-md md:text-xl text-gray-600 leading-relaxed max-w-lg">
           I collaborate with brands globally to design impactful, mission-focused websites
           that drive results and achieve business goals.
         </p>
 
         <div className="pt-4">
-          <Button title={'My Resume'} className={'text-gray-50 bg-slate-900'} />
+          <Button title={'My Resume'} className={'text-gray-50 bg-[#1b1b1b]'} />
         </div>
       </div>
     </section>

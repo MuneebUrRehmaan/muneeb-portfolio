@@ -39,7 +39,7 @@ const WorkCard = (project) => {
 
                     {/* Visit Website */}
                     <a href={project.link} target='_blank'>
-                        <Button title={'Live Link'} className={'text-gray-50 bg-slate-900'}/></a>
+                        <Button title={'Live Link'} className={'text-gray-50 bg-[#1b1b1b]'}/></a>
                 </div>
             </div>
         </div>
