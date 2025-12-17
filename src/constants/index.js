@@ -22,7 +22,7 @@ import ppi from '../assets/ppi.png'
 // Navigation Links
 export const nav_links = [
   { label: 'Home', href: 'muneeb-portfolio/' },
-  { label: 'Works', href: 'muneeb-portfolio/projects' },
+  { label: 'Work', href: 'muneeb-portfolio/projects' },
   { label: 'About', href: 'muneeb-portfolio/about' },
   
 ];

@@ -40,7 +40,7 @@ const CustomCursor = () => {
       setShowButton(false);
 
       gsap.to(dot, { opacity: 0, scale: 0.3, duration: 0.2 });
-      gsap.to(img, { opacity: 1, scale: 1, duration: 0.2 });
+      gsap.to(img, { opacity: 1, scale: 1, duration: 0 });
 
       intervalRef.current = setInterval(() => {
         setImgIndex((prev) => (prev + 1) % images.length);
@@ -95,8 +95,8 @@ const CustomCursor = () => {
 
         <span className="relative inline-flex w-2.5 h-2.5 rounded-full bg-orange-500 justify-center items-center">
           {showButton && (
-            <button className="absolute inset-0 m-auto w-16 h-16 rounded-full bg-white text-orange-500 text-xs font-semibold flex justify-center items-center text-center">
-              View <br /> Site
+            <button className=" py-2 px-4 rounded-full bg-white text-orange-500 whitespace-nowrap font-semibold flex justify-center items-center text-center">
+              View  Site
             </button>
           )}
         </span>
@@ -107,7 +107,7 @@ const CustomCursor = () => {
         ref={imgRef}
         src={images[imgIndex]}
         alt="cursor"
-        className="cursor-img fixed pointer-events-none z-999"
+        className="cursor-img fixed pointer-events-none z-999 border rounded border-orange-300/70"
       />
     </>
   );

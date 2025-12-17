@@ -1,6 +1,6 @@
 
 import Navbar from './components/Navbar'
-import About from './components/About'
+import AboutPage from './pages/AboutPage'
 import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
 import Homepage from './pages/Homepage'
@@ -39,7 +39,7 @@ const App = () => {
       <Routes>
         <Route path='muneeb-portfolio/' element={<Homepage />} />
         <Route path='muneeb-portfolio/projects' element={<Projects />} />
-        <Route path='muneeb-portfolio/about' element={<About />} />
+        <Route path='muneeb-portfolio/about' element={<AboutPage />} />
         <Route path='muneeb-portfolio/contact' element={<Contact />} />
       </Routes>
     </div>

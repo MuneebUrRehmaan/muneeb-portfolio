@@ -1,17 +1,16 @@
 import React from 'react';
 import { experience } from '../constants';
+import Title from './Title';
 
 const Experience = () => {
 
   return (
-    <section id="experience" className="w-full bg-cream pt-24 pb-20 px-4 md:px-8">
+    <section id="experience" className="component-gap">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
-        <div className="mb-16 max-md:mb-12 text-center">
-          <h2 className="font-display text-5xl max-md:text-4xl max-md:text-start  font-bold uppercase tracking-tight text-black">
-            Experience & Skills
-          </h2>
+        <div className="mb-16 max-md:mb-12">
+          <Title title={'Experience &  Skills'}/>
         </div>
 
         {/* Experience List */}

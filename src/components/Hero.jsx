@@ -30,7 +30,7 @@ const Hero = () => {
     return (
         <section id='home' className=" relative min-h-screen w-full overflow-hidden flex flex-col justify-end pt-24 pb-10 md:pb-0">
             {/* Background Gradient Spot */}
-            <div className=" absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-yellow-50/60 rounded-full blur-[120px] pointer-events-none z-1" />
+            <div className=" absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px]  rounded-full blur-[120px] pointer-events-none z-1" />
             <img src={bghero} alt="" className='absolute top-0 w-screen h-screen z-0' />
             {/* Main Content Container */}
             <div className="max-w-7xl relative z-10  mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:block h-full grow">
@@ -82,7 +82,7 @@ const Hero = () => {
 
                 </div>
 
-                <div  className='lbg flex flex-col  gap-13 z-20 absolute  bottom-6 max-md:bottom-0  md:right-25 max-md:left-1 max-md:ml-4   '>
+                <div  className=' flex flex-col  gap-13 z-20 absolute  bottom-6 max-md:bottom-6  md:right-25 max-md:left-1 max-md:ml-4   '>
                     <div ref={descRef} className="relative z-20 max-w-[280px] text-left max-md:hidden">
                         <p className="text-medium font text-gray-800 leading-[1.4]">
                             {hero.description}

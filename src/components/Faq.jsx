@@ -10,9 +10,9 @@ const FAQ = () => {
   };
 
   return (
-    <section className="w-full bg-cream py-24 px-4 md:px-8">
+    <section className="component-gap">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-
+        
         {/* Left Side - Title */}
         <div className="lg:col-span-5">
           <div className="flex items-center gap-2 mb-6 text-orange-300 animate-fade-in">

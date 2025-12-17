@@ -4,8 +4,13 @@ import {  contact, nav_links, social } from '../constants';
 import { Link} from 'react-router-dom'
 
 const Footer = () => {
+
+  const hash = () => {
+        window.scrollTo(0, 0)
+    }
+
   return (
-    <footer id="contact" className="w-full bg-black text-cream pt-24 pb-12 px-4 md:px-8 relative z-20 -mt-12">
+    <footer id="contact" className="component-gap bg-black/90 relative z-20 -mt-12">
       <div className="max-w-7xl mx-auto">
         
         {/* Top Section: Call to Action */}
@@ -14,7 +19,7 @@ const Footer = () => {
             What's Next?
           </span>
           <h2 className="text-white font-display text-6xl  font-bold uppercase tracking-normal mb-10 leading-[0.9]">
-            Let's Work <br className=""/> Together
+            Let's Work Together
           </h2>
           <a 
             href={`mailto:${contact.email}`} 
@@ -54,7 +59,7 @@ const Footer = () => {
              <ul className="space-y-4">
                 {nav_links.map(link => (
                   <li key={link.label}>
-                    <Link to={link.href} className="text-gray-400 hover:text-white transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
+                    <Link to={link.href} onClick={()=>{hash()}} className="text-gray-400 hover:text-white transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
                       {link.label}
                     </Link>
                   </li>

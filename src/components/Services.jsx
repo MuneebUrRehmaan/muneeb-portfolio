@@ -1,16 +1,15 @@
 import React from 'react';
 import { service } from '../constants';
+import Title from './Title';
 
 const Services = () => {
   return (
-    <section id="services" className="w-full bg-cream pt-24  pb-20 px-4 md:px-8">
+    <section id="services" className="component-gap">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
-        <div className="mb-16 max-md:mb-12 text-center">
-          <h2 className="font-display max-md:text-start text-6xl max-md:text-4xl font-bold uppercase tracking-tight text-black">
-            I Can Help You With
-          </h2>
+        <div className="mb-16 max-md:mb-12 ">
+          <Title title={'Services'}/>
         </div>
 
         {/* Services Grid */}

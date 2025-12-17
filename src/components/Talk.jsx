@@ -1,10 +1,11 @@
 import React from 'react'
 import { Sparkles, Mail, Github, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { avater, contact } from '../constants';
+import Button from './Button';
 
 const Talk = () => {
     return (
-<section id="contact" className="w-full bg-cream py-24 max-sm:py-13 px-4 md:px-8">
+<section id="contact" className="component-gap">
         <div className="max-w-7xl mx-auto">
             {/* Header */}
             <div className="mb-12 mt-4">
@@ -13,7 +14,7 @@ const Talk = () => {
                     <span className="text-sm font-bold tracking-widest uppercase">Connect with me</span>
                 </div>
                 <h2 className="font-display text-5xl  font-bold text-black tracking-tight leading-tight">
-                    Let's start a project <br /> together
+                    Let's start a project  together
                 </h2>
             </div>
 
@@ -52,10 +53,9 @@ const Talk = () => {
                         </div>
 
                         <div className="pt-4">
-                            <input
+                            <button
                                 type="submit"
-                                className="px-6 py-2 bg-white border border-gray-400 rounded-full text-black font-bold text-lg hover:bg-black hover:text-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0 cursor-pointer"
-                            />
+                            ><Button title={'Submit'} className={'bg-gray-50 text-gray-50'}/></button>
                             
                         </div>
                     </form>

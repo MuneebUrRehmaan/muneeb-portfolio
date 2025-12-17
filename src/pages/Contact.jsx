@@ -4,7 +4,7 @@ import Talk from '../components/Talk';
 
 const Contact = () => {
     return (
-        <div id='talk' className='pt-12'>
+        <div id='talk' className='py-12'>
             <Talk />
             <FAQ />
         </div>

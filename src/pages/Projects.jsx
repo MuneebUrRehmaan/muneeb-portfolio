@@ -8,7 +8,7 @@ const Projects = () => {
             <div className="max-w-7xl mx-auto">
 
                 {/* Section Header */}
-                <h2  className="font-display text-5xl max-md:text-4xl font-bold text-center mb-16 uppercase tracking-tight text-black">
+                <h2  className="font-display text-5xl max-md:text-4xl font-bold text-start mb-10 uppercase tracking-tight text-black">
                     All Projects
                 </h2>
 
