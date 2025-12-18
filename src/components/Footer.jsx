@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowUpRight, Heart } from 'lucide-react';
 import {  contact, nav_links, social } from '../constants';
 import { Link} from 'react-router-dom'
@@ -43,7 +42,7 @@ const Footer = () => {
           {/* Brand & Copyright - Spans 5 columns */}
           <div className="md:col-span-5 flex flex-col justify-between h-full">
             <div className="mb-6">
-              <a href="#" className="font-serif text-3xl md:text-4xl font-bold italic tracking-tight text-white inline-block hover:text-orange-200 transition-colors">
+              <a href="/" className="font-serif text-3xl md:text-4xl font-bold italic tracking-tight text-white inline-block hover:text-orange-200 transition-colors">
                 Muneeb
               </a>
             </div>

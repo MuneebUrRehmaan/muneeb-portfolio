@@ -1,6 +1,7 @@
 import React, { useRef, useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 import { ws1, ws2, ws3, ws4, ws5, ws6 } from "../constants";
+import {ArrowUpRight} from 'lucide-react';
 
 const CustomCursor = () => {
   const images = [ws1, ws2, ws3, ws4, ws5, ws6];
@@ -95,8 +96,8 @@ const CustomCursor = () => {
 
         <span className="relative inline-flex w-2.5 h-2.5 rounded-full bg-orange-500 justify-center items-center">
           {showButton && (
-            <button className=" py-2 px-4 rounded-full bg-white text-orange-500 whitespace-nowrap font-semibold flex justify-center items-center text-center">
-              View  Site
+            <button className=" py-2 px-2 rounded-full bg-white text-orange-500 whitespace-nowrap font-semibold flex justify-center items-center text-center">
+              <ArrowUpRight className="w-8 h-8" />
             </button>
           )}
         </span>

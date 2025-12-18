@@ -3,10 +3,11 @@ import CircularTextBadge  from './CircularTextBadge';
 import { profile } from '../constants';
 import Button from './Button';
 import TextType from './TextType';
+import {resume} from '../constants'
 
 const AboutHero = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+    <section className="px-2 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
       
       {/* Left Column: Image Container */}
       <div className="relative lg:w-1/3 max-w-[500px] lg:max-w-none max-sm:hidden">
@@ -31,8 +32,8 @@ const AboutHero = () => {
 
       {/* Right Column: Text Content */}
       <div className="w-full lg:w-2/3 flex flex-col items-start text-left space-y-4 pt-10 lg:pt-0">
-        <h1 className="text-6xl max-md:text-4xl lg:text-7xl font-semibold leading-[1.3] tracking-tight text-gray-900">
-          A <span className="text-orange-400/90 max-sm:text-[34px]">
+        <h1 className="text-6xl max-md:text-4xl lg:text-7xl font-semibold leading-[1.3] tracking-tight text-gray-950">
+          A <span className="text-orange-400/90 max-sm:text-[32px]">
           <TextType
                                 text={["Frontend Developer", "Backend Developer", "FullStack Developer"]}
                                 typingSpeed={75}
@@ -49,9 +50,17 @@ const AboutHero = () => {
           that drive results and achieve business goals.
         </p>
 
-        <div className="pt-4">
+        
+          <a 
+          href={resume}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="pt-2"
+>
+
           <Button title={'My Resume'} className={'text-gray-50 bg-[#1b1b1b]'} />
-        </div>
+          </ a >
+        
       </div>
     </section>
   );

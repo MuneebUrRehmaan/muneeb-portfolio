@@ -11,7 +11,7 @@ const techStack = [
     ),
   },
   {
-    name: 'Cypress',
+    name: 'Node js',
     icon: (
       <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2">
         <circle cx="12" cy="12" r="10" className="text-gray-400" strokeWidth="1.5" />
@@ -20,7 +20,7 @@ const techStack = [
     ),
   },
   {
-    name: 'Docker',
+    name: 'Express js',
     icon: (
       <svg viewBox="0 0 24 24" className="w-6 h-6" fill="#2496ED">
         <path d="M13 7h2v2h-2V7zm-3 0h2v2h-2V7zm-3 0h2v2H7V7zm3-3h2v2h-2V4zm-3 0h2v2H7V4zM4 7h2v2H4V7zm-3 4.5v3.6c0 1.6 2.4 3 6.6 3.4 1-.2 1.9-.5 2.5-.9-.1-.2-.1-.5-.1-.7 0-1.7 1.3-3 3-3 .2 0 .5 0 .7.1V10H1v1.5z"/>
@@ -38,7 +38,7 @@ const techStack = [
     ),
   },
   {
-    name: 'AWS',
+    name: 'Mongodb',
     icon: (
       <svg viewBox="0 0 24 24" className="w-6 h-6">
         <path d="M17.2 14.5c-.5.9-1.3 1.6-2.4 1.9-1.1.3-2.3.3-3.3-.1-1-.4-1.8-1.2-2.3-2.1-.5-1-.7-2.1-.5-3.2.1-1.1.6-2.1 1.4-2.8.8-.7 1.8-1.1 2.9-1.1 1.1 0 2.2.4 3 1.1.4.3.7.7 1 1.2h.1V5.2h2.2v9.6c0 1.5.3 2.7.9 3.6l-2 1.2c-.7-1-1-2.4-1-4.1z" fill="#232F3E"/>
@@ -95,7 +95,7 @@ const techStack = [
 
 const TechStackMarquee = () => {
   return (
-    <div className="w-full py-16 overflow-hidden relative">
+    <div className="w-full pt-16 pb-6 overflow-hidden relative">
   
       <div className="flex w-max animate-scroll">
         {[1, 2, 3].map(loop => (

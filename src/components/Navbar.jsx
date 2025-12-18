@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { nav_links, ppi } from '../constants';
-import { Logs , X } from 'lucide-react';
+import { herologo, nav_links, ppi } from '../constants';
+import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom'
 import Button from './Button';
 
@@ -30,12 +30,12 @@ const Navbar = () => {
                             <a
                                 href="/"
                                 className="font-serif  text-2xl  font-bold italic tracking-tight text-gray-900">
-                                Muneeb
+                                <img src={herologo} alt="" className='w-15'/>
                             </a>
                         </div>
-                        <div className="hidden md:flex items-center  justify-center gap-8">
+                        <div className=" hidden md:flex items-center  justify-center gap-8">
                             {nav_links.map((link, idx) => (
-                                <Link key={idx} onClick={() => { hash() }} className="text-medium font-lg   text-slate-700 hover:text-black transition-colors duration-200" to={link.href} >
+                                <Link key={idx} onClick={() => { hash() }} className=" text-medium font-lg  text-slate-800 active:text-black hover:text-black transition-colors duration-200" to={link.href} >
                                     {link.label}
                                 </Link>
                             ))}
@@ -55,7 +55,7 @@ const Navbar = () => {
                                 onClick={() => setIsOpen(!isOpen)}
                                 className="p-2 text-gray-600 hover:text-black focus:outline-none"
                             >
-                                {isOpen ? <X size={24} /> : <Logs size={24} />}
+                                {isOpen ? <X size={24} /> : <Menu size={28} />}
                             </button>
                         </div>
                     </div>
@@ -69,9 +69,9 @@ const Navbar = () => {
                     <div className=" flex items-center justify-between border-b pb-4  border-[#d1d1d1]">
                         <div className="shrink-0 py-3 px-2">
                             <a
-                                href="#"
+                                href="/"
                                 className="font-serif text-2xl  font-bold italic tracking-tight text-gray-900">
-                                Muneeb
+                                <img src={herologo} alt="" className='w-15'/>
                             </a>
                         </div>
                         <div className="md:hidden">
@@ -79,7 +79,7 @@ const Navbar = () => {
                                 onClick={() => setIsOpen(!isOpen)}
                                 className="p-2 text-gray-600 hover:text-black focus:outline-none"
                             >
-                                {isOpen ? <X size={24} /> : <Menu size={24} />}
+                                {isOpen ? <X size={28}  /> : <Menu size={28} />}
                             </button>
                         </div>
 

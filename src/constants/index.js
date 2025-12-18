@@ -18,6 +18,8 @@ import ws4 from '../assets/ws4.png'
 import ws5  from '../assets/ws5.png'
 import ws6  from '../assets/ws6.png'
 import ppi from '../assets/ppi.png'
+import resume from '../assets/resume.pdf'
+import herologo from '../assets/herologo.png'
 
 // Navigation Links
 export const nav_links = [
@@ -29,12 +31,9 @@ export const nav_links = [
 
 // Hero Section Data
 export const hero = {
-  name: 'Madison.',
-  greeting: 'Hey, there',
-  mainTitle: 'I AM MADISON',
-  roleTitle: 'DIGITAL PRODUCT DESIGNER',
+  name: 'MUneeb.',
   availability: 'Available for new opportunities',
-  description: 'Specialized in Web Design, UX/UI, Webflow, and Front End Development.',
+  description: 'Specialized in Mern Stack, UX/UI, API Integration, and Backend Development.',
 };
 
 export const logos = [
@@ -252,5 +251,7 @@ export{
   ws3,
   ws4,
   ws5,
-  ws6
+  ws6,
+  resume,
+  herologo
 }

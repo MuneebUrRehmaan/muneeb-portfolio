@@ -1,5 +1,6 @@
 import React from 'react';
 import { about, yo } from '../constants';
+import SubHaeading from './SubHaeading';
 
 const About = () => {
   return (
@@ -14,9 +15,7 @@ const About = () => {
         <div className="order-2 lg:order-2 flex flex-col gap-8">
 
           <div>
-            <span className="inline-block text-sm font-bold tracking-widest text-orange-300 uppercase mb-3">
-              {about.subtitle}
-            </span>
+            <SubHaeading subTitle={'My Journey'}/>
 
             <h2 className="font-display text-6xl max-md:text-4xl font-bold text-black uppercase leading-none tracking-tight">
               {about.title}
@@ -52,18 +51,13 @@ const About = () => {
               loop
               muted
               className=" w-full h-full object-cover "
-              
+
             >
               <source src={yo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
 
-            
-
-        
           </div>
-          {/* Background dots & decor */}
-          {/* <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-orange-200/20 rounded-full -z-10 blur-2xl" /> */}
         </div>
 
       </div>

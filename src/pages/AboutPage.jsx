@@ -10,7 +10,7 @@ import { ProcessSection } from '../components/ProcessSection'
 const AboutPage = () => {
   return (
     <section>
-        <div className='max-sm:hidden pt-20 px-4'>
+        <div className='max-sm:hidden pt-20 '>
             <AboutHero />
         <TechStackMarquee />
         </div>

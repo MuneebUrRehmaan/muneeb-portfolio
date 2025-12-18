@@ -1,14 +1,76 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const Button = (props) => {
   return (
-    <button type="submit" className={` cursor-pointer flex justify-center gap-2 items-center mx-auto shadow-sm text-medium  backdrop-blur-md lg:font-semibold isolation-auto border-gray-50  before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 whitespace-nowrap md:uppercase before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-5 max-sm:px-4 max-sm:py-2 py-2.5 overflow-hidden rounded  md:rounded-full group ${props.className}`}>
-      {props.title}
-      <svg className=" w-6 h-6 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-100 group-hover:border-none p-1.5 rotate-45" viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z" className="fill-gray-100 group-hover:fill-gray-800" />
-      </svg>
-    </button>
+    <StyledWrapper>
+      <button className="cssbuttons-io-button">
+        {props.title}
+        <div className="icon">
+          <svg height={24} width={24} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor" />
+          </svg>
+        </div>
+      </button>
+    </StyledWrapper>
   );
 }
+
+const StyledWrapper = styled.div`
+  .cssbuttons-io-button {
+    background: #FB923C;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    white-space: nowrap;
+    font-weight: 500;
+    border-radius: 99rem;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #fdae99;
+    overflow: hidden;
+    position: relative;
+    height: 2.6em;
+    padding-right: 3em;
+    cursor: pointer;
+  }
+
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 2em;
+    border-radius: 99em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #fdae4466;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+
+  .cssbuttons-io-button .icon svg {
+    width: 1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+  }
+
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }`;
 
 export default Button;

@@ -14,6 +14,10 @@ body{
   overflow-x: hidden;
 }
 
+.aa.active{
+  color: black;
+}
+
 .experience-section {
   position: relative;/* hide default cursor */
 }

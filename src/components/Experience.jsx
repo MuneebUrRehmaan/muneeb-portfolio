@@ -1,6 +1,7 @@
 import React from 'react';
 import { experience } from '../constants';
 import Title from './Title';
+import SubHaeading from './SubHaeading';
 
 const Experience = () => {
 
@@ -10,6 +11,7 @@ const Experience = () => {
 
         {/* Section Header */}
         <div className="mb-16 max-md:mb-12">
+          <SubHaeading  subTitle={'My Skills'}/>
           <Title title={'Experience &  Skills'}/>
         </div>
 

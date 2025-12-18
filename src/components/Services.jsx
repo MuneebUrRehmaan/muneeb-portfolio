@@ -1,6 +1,7 @@
 import React from 'react';
 import { service } from '../constants';
 import Title from './Title';
+import SubHaeading from './SubHaeading';
 
 const Services = () => {
   return (
@@ -9,6 +10,7 @@ const Services = () => {
 
         {/* Section Header */}
         <div className="mb-16 max-md:mb-12 ">
+          <SubHaeading subTitle={'what i do'} />
           <Title title={'Services'}/>
         </div>
 

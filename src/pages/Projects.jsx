@@ -1,6 +1,8 @@
 import React from 'react'
 import { projects } from '../constants';
 import WorkCard from '../components/WorkCard';
+import Title from '../components/Title';
+import SubHaeading from '../components/SubHaeading';
 
 const Projects = () => {
     return (
@@ -8,9 +10,8 @@ const Projects = () => {
             <div className="max-w-7xl mx-auto">
 
                 {/* Section Header */}
-                <h2  className="font-display text-5xl max-md:text-4xl font-bold text-start mb-10 uppercase tracking-tight text-black">
-                    All Projects
-                </h2>
+                <SubHaeading subTitle={'My Work'}/>
+               <Title title={'All Projects'}/>
 
                 {/* Projects Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mb-20 max-sm:mb-10">

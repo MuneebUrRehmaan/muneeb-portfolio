@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import {
-  Sparkles,
   PenTool,
   PencilRuler,
   Code,
@@ -8,8 +7,8 @@ import {
   Lightbulb,
   ArrowRight
 } from 'lucide-react';
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import Title from './Title';
+import SubHaeading from './SubHaeading';
 
 const steps = [
   {
@@ -66,12 +65,7 @@ export const ProcessSection = () => {
       
       <section className="block  w-full py-20 px-4 md:px-8">
         <div className="mb-12">
-          <div className="flex items-center gap-2 mb-4">
-            <Sparkles className="text-emerald-500" size={20} />
-            <span className="text-sm font-medium tracking-widest text-emerald-500 uppercase">
-              Steps I Follow
-            </span>
-          </div>
+          <SubHaeading subTitle={'Steps I Follow'}/>
           <Title title={'My Process'} />
           
         </div>
@@ -84,7 +78,7 @@ export const ProcessSection = () => {
             >
               <div className="flex flex-col gap-6 relative z-10">
                 <div
-                  className={`w-14 h-14 flex items-center justify-center  ${step.color}`}
+                  className={`w-14 h-14 flex items-center rounded justify-center  ${step.color}`}
                 >
                   {step.icon}
                 </div>
