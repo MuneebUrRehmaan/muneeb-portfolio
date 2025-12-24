@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const slideUp = (element) => {
+export const SlideUp = (element) => {
   gsap.from(element, {
     y: 50,
     opacity: 0,

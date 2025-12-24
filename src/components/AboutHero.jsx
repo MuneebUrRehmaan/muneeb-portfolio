@@ -4,6 +4,7 @@ import { profile } from '../constants';
 import Button from './Button';
 import TextType from './TextType';
 import {resume} from '../constants'
+import {SlideUp} from '../animations/gsapAnimation'
 
 const AboutHero = () => {
   return (
@@ -13,6 +14,7 @@ const AboutHero = () => {
       <div className="relative lg:w-1/3 max-w-[500px] lg:max-w-none max-sm:hidden">
         
         {/* Image Mask Wrapper */}
+        
         <div className="relative z-0 w-full h-120 overflow-hidden rounded rounded-b-[170px] shadow-sm">
           <img
             src={profile}

@@ -79,7 +79,7 @@ const Hero = () => {
 
                 </div>
 
-                <div  className=' flex flex-col  gap-13 z-20 absolute  bottom-6 max-md:bottom-6  md:right-25 max-md:left-1 max-md:ml-4   '>
+                <div  className=' flex flex-col  gap-13 z-20 absolute  bottom-6 max-md:bottom-8  md:right-25 max-md:left-1 max-md:ml-4   '>
                     <div ref={descRef} className="relative z-20 max-w-[280px] text-left max-md:hidden">
                         <p className="text-medium font text-gray-800 leading-[1.4]">
                             {hero.description}

@@ -20,6 +20,7 @@ import ws6  from '../assets/ws6.png'
 import ppi from '../assets/ppi.png'
 import resume from '../assets/resume.pdf'
 import herologo from '../assets/herologo.png'
+import menuprofile from '../assets/menu-profile.png'
 
 // Navigation Links
 export const nav_links = [
@@ -253,5 +254,6 @@ export{
   ws5,
   ws6,
   resume,
-  herologo
+  herologo,
+  menuprofile
 }

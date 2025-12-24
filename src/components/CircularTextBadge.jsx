@@ -3,9 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 const CircularTextBadge = ({ text, className = '' }) => {
   return (
-    <div
-      className={`relative flex items-center justify-center w-10 h-10 md:w-24 md:h-24 bg-white rounded-full shadow-lg ${className}`}
-    >
+    <div className={`relative flex items-center justify-center w-10 h-10 md:w-24 md:h-24 bg-white rounded-full shadow-lg ${className}`}>
       {/* Rotating Text Ring */}
       <div className="absolute inset-0 w-full h-full animate-spin-slow">
         <svg viewBox="0 0 100 100" className="w-full h-full">

@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import CustomCursor from './components/CustomCursor'
+import MobileBottomNav from './components/MobileBottomNav'
 
 const App = () => {
   //  const cursorRef = useRef(null);
@@ -35,6 +36,7 @@ const App = () => {
       
   <CustomCursor />
     <Navbar />
+    <MobileBottomNav />
     <div className="bg-[#f9f6ed] min-h-screen w-full text-gray-900 antialiased font-sans selection:bg-orange-200 selection:text-orange-900">
       <Routes>
         <Route path='muneeb-portfolio/' element={<Homepage />} />

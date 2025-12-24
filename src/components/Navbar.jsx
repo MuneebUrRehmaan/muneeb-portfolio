@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { herologo, nav_links, ppi } from '../constants';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { herologo, menuprofile, nav_links } from '../constants';
 import { Link } from 'react-router-dom'
 import Button from './Button';
 
 const Navbar = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
     const hash = () => {
@@ -50,65 +48,13 @@ const Navbar = () => {
                             </Link>
                         </div>
                         {/* Mobile Menu Button */}
-                        <div className="md:hidden">
-                            <button
-                                onClick={() => setIsOpen(!isOpen)}
-                                className="p-2 text-gray-600 hover:text-black focus:outline-none"
-                            >
-                                {isOpen ? <X size={24} /> : <Menu size={28} />}
-                            </button>
+                        <div className="relative md:hidden">
+                            
+                            <img src={menuprofile} alt="" className=' w-14 h-14 rounded-full object-cover border border-amber-100' />
                         </div>
                     </div>
                 </div>
-                {/* Mobile Menu Drawer */}
             </nav>
-
-            {isOpen && (
-                <div className="bg-[#f9f6ed] mobile-nav fixed z-999 flex flex-col h-screen w-screen border-b border-gray-100 shadow-lg md:hidden  py-4 px-4 space-y-4">
-
-                    <div className=" flex items-center justify-between border-b pb-4  border-[#d1d1d1]">
-                        <div className="shrink-0 py-3 px-2">
-                            <a
-                                href="/"
-                                className="font-serif text-2xl  font-bold italic tracking-tight text-gray-900">
-                                <img src={herologo} alt="" className='w-15'/>
-                            </a>
-                        </div>
-                        <div className="md:hidden">
-                            <button
-                                onClick={() => setIsOpen(!isOpen)}
-                                className="p-2 text-gray-600 hover:text-black focus:outline-none"
-                            >
-                                {isOpen ? <X size={28}  /> : <Menu size={28} />}
-                            </button>
-                        </div>
-
-                    </div>
-                    <div className='mobile-nav-links'>
-                        {nav_links.map((link) => (
-                            <div>
-                                <ul>
-                                    <li><a>
-                                        <Link to={link.href}
-
-                                            key={link.label}
-                                            className=""
-                                            onClick={() => { setIsOpen(false), hash() }}
-                                        >
-                                            {link.label}
-                                        </Link> </a></li>
-                                </ul>
-
-                            </div>
-                        ))} <Link
-                            to='muneeb-portfolio/contact'
-                            className=""
-                            onClick={() => { setIsOpen(false), hash() }}
-                        >
-                            Contact
-                        </Link> </div>
-                </div>
-            )}
         </div>
     )
 }
