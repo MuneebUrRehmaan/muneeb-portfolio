@@ -29,11 +29,11 @@ const WorkCard = (project) => {
             <div className="flex flex-col justify-end p-4 bg-[#f1eddd] ">
 
                 {/* Slide Up Content */}
-                <div><p className='text-sm max-sm:text-xs  text-orange-400 font-semibold'>{project.category}</p></div>
+                <div><p className='text-sm max-sm:text-xs  text-orange-400 font-semibold -mb-1.5'>{project.category}</p></div>
 
                 <div className="flex items-center justify-between pt-2 gap-2 ">
 
-                    <h3 className="text-black font-display text-2xl max-sm:text-xl  font-semibold capitalize leading-none tracking-normal">
+                    <h3 className="text-black text-2xl max-sm:text-2xl  font-semibold capitalize leading-none tracking-normal">
                         {project.title}
                     </h3>
 

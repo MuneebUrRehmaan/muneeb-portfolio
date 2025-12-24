@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <div >
-            <nav className={`max-w-7xl  fixed top-0 left-0 right-0  z-50 transition-all duration-300 border-0 ${isScrolled ? 'bg-[#fbf9f4] py-2  shadow-sm border border-gray-200 rounded  mx-8 max-sm:mx-4  mt-2 ' : 'bg-transparent py-6'}`}>
+            <nav className={`max-w-7xl  sm:fixed absolute top-0 left-0 right-0  z-50 transition-all duration-300 border-0 ${isScrolled ? 'sm:bg-[#fbf9f4] sm:py-2  sm:shadow-sm sm:border sm:border-gray-200 sm:rounded  sm:mx-8  sm:mt-2 ' : 'bg-transparent py-6'}`}>
                 <div className=" mx-auto px-4">
                     <div className="flex items-center h-full justify-between">
                         <div className="shrink-0">
@@ -50,7 +50,7 @@ const Navbar = () => {
                         {/* Mobile Menu Button */}
                         <div className="relative md:hidden">
                             
-                            <img src={menuprofile} alt="" className=' w-14 h-14 rounded-full object-cover border border-amber-100' />
+                            <img src={menuprofile} alt="" className=' w-14 h-14 rounded-full border border-[#f3eede] object-cover' />
                         </div>
                     </div>
                 </div>

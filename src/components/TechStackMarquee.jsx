@@ -3,64 +3,45 @@ import React from 'react';
 // Tech stack data with inline SVGs (same-to-same)
 const techStack = [
   {
-    name: 'PostgreSQL',
+    name: 'React js',
     icon: (
-      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="#336791">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9c.83 0 1.5-.67 1.5-1.5S7.83 8 7 8s-1.5.67-1.5 1.5S6.17 11 7 11zm3.5 3c.83 0 1.5-.67 1.5-1.5S11.33 11 10.5 11s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm6.5-1c0 2.21-1.79 4-4 4s-4-1.79-4-4h8z"/>
-      </svg>
+      <img src="http://cdn.worldvectorlogo.com/logos/react-2.svg" alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'Node js',
     icon: (
-      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2">
-        <circle cx="12" cy="12" r="10" className="text-gray-400" strokeWidth="1.5" />
-        <path d="M15 9l-6 6M9 9l6 6" className="text-green-600" />
-      </svg>
+      <img src="http://cdn.worldvectorlogo.com/logos/nodejs-3.svg" alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'Express js',
     icon: (
-      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="#2496ED">
-        <path d="M13 7h2v2h-2V7zm-3 0h2v2h-2V7zm-3 0h2v2H7V7zm3-3h2v2h-2V4zm-3 0h2v2H7V4zM4 7h2v2H4V7zm-3 4.5v3.6c0 1.6 2.4 3 6.6 3.4 1-.2 1.9-.5 2.5-.9-.1-.2-.1-.5-.1-.7 0-1.7 1.3-3 3-3 .2 0 .5 0 .7.1V10H1v1.5z"/>
-      </svg>
+      <img src='https://cdn.worldvectorlogo.com/logos/expressjs.svg' alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'Firebase',
     icon: (
-      <svg viewBox="0 0 24 24" className="w-6 h-6">
-        <path d="M3.89 15.67L6.44 2.6a.66.66 0 011.18-.23l3.05 5.86L3.89 15.67z" fill="#FFCA28"/>
-        <path d="M13.29 8.24l3.05-5.87a.66.66 0 011.19.24l2.58 13.06-6.82-7.43z" fill="#FFA000"/>
-        <path d="M12 17.58l-8.11-4.72-1.35 2.59a.65.65 0 00.32.86l9.14 5.14 9.14-5.14a.65.65 0 00.32-.86l-1.35-2.59L12 17.58z" fill="#F57C00"/>
-      </svg>
+     <img src='https://cdn.worldvectorlogo.com/logos/firebase-1.svg' alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'Mongodb',
     icon: (
-      <svg viewBox="0 0 24 24" className="w-6 h-6">
-        <path d="M17.2 14.5c-.5.9-1.3 1.6-2.4 1.9-1.1.3-2.3.3-3.3-.1-1-.4-1.8-1.2-2.3-2.1-.5-1-.7-2.1-.5-3.2.1-1.1.6-2.1 1.4-2.8.8-.7 1.8-1.1 2.9-1.1 1.1 0 2.2.4 3 1.1.4.3.7.7 1 1.2h.1V5.2h2.2v9.6c0 1.5.3 2.7.9 3.6l-2 1.2c-.7-1-1-2.4-1-4.1z" fill="#232F3E"/>
-        <path d="M3.5 16.5c2.4 1.8 5.6 2.3 8.3 1.5.4-.1.6-.6.5-1-.1-.4-.6-.6-1-.5-2.2.6-4.9.1-6.9-1.3-.3-.2-.8-.2-1 .2-.3.3-.3.8 0 1.1z" fill="#FF9900"/>
-      </svg>
+      <img src='https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg' alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'GSAP',
     icon: (
-      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="#88CE02">
-        <path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13h-13L12 6.5z"/>
-        <circle cx="12" cy="15" r="2" fill="white"/>
-      </svg>
+      <img src='https://cdn.worldvectorlogo.com/logos/g-j.svg' alt="" className='w-6 h-6'/>
     ),
   },
   {
-    name: 'Framer Motion',
+    name: 'JavaScript',
     icon: (
-      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="#BB00FF">
-        <path d="M4 0h16v8h-8zM4 8h8l8 8h-16zM4 16h8v8z"/>
-      </svg>
+      <img src='https://cdn.worldvectorlogo.com/logos/javascript-1.svg' alt="" className='w-6 h-6'/>
     ),
   },
   {

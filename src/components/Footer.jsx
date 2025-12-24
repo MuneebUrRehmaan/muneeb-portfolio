@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
 
           {/* Socials - Spans 4 columns */}
-          <div className="md:col-span-4">
+          <div className="md:col-span-4 max-sm:mb-16">
              <h3 className="text-white font-bold uppercase tracking-widest text-xs mb-8 text-opacity-80">Socials</h3>
              <ul className="grid grid-cols-2 gap-x-4 gap-y-4">
                 {social.map(link => (

@@ -53,7 +53,7 @@ const Hero = () => {
 
                 {/* Main info */}
                 <div  className=" flex flex-col gap-4  z-20 absolute max-md:relative max-sm:mt-5 bottom-6">
-                    <div className="w-fit flex  items-center gap-3 max-sm:gap-0  backdrop-blur-sm pl-2 pr-5  rounded-full shadow-sm border border-white/50">
+                    <div className="w-fit flex  items-center gap-3 max-sm:gap-0  backdrop-blur-sm pl-2 pr-5 mt-4 rounded-full shadow-sm border border-white/50">
                         <span className="relative flex h-8 w-8 items-center justify-center rounded-full ">
                             <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-orange-400 opacity-80"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
@@ -65,6 +65,7 @@ const Hero = () => {
                             Available for work
                         </span>
                     </div>
+                    
 
                     <div ref={textRef} className="relative z-20 ">
                         <div className="flex flex-col leading-none select-none max-sm:ml-2">
@@ -79,7 +80,7 @@ const Hero = () => {
 
                 </div>
 
-                <div  className=' flex flex-col  gap-13 z-20 absolute  bottom-6 max-md:bottom-8  md:right-25 max-md:left-1 max-md:ml-4   '>
+                <div  className=' flex flex-col  gap-13 z-20 absolute  bottom-6 max-md:bottom-12  md:right-25 max-md:left-1 max-md:ml-4   '>
                     <div ref={descRef} className="relative z-20 max-w-[280px] text-left max-md:hidden">
                         <p className="text-medium font text-gray-800 leading-[1.4]">
                             {hero.description}

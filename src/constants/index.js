@@ -62,7 +62,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Aurelia A Luxery Hotel",
+    title: "Aurelia",
     category: "Hotel Managment",
     image: pj2,
     link: "https://muneeburrehmaan.github.io/Aurelia/",

@@ -20,7 +20,7 @@ const MobileBottomNav = () => {
   return (
     <div className="sm:hidden fixed bottom-0 left-0 right-0 z-100">
       {/* Navigation Bar Container */}
-      <div className="bg-white shadow-[0_-15px_50px_rgba(0,0,0,0.1)] border-t border-gray-50 pt-5 pb-2 px-6">
+      <div className="bg-white shadow-[0_-1px_30px_rgba(0,0,0,0.07)] border-t border-gray-50 pt-5 pb-2 px-6">
         <div className="flex items-center justify-between max-w-md mx-auto">
           {navItems.map((item) => {
             const isActive = activeTab === item.name;

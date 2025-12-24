@@ -71,6 +71,14 @@ const StyledWrapper = styled.div`
 
   .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
-  }`;
+  }
+    
+  @media (max-width: 480px) {
+    .cssbuttons-io-button {
+      font-size: 15px;
+      letter-spacing: 0.03em;
+    }
+}
+  `;
 
 export default Button;

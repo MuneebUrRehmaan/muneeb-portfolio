@@ -1,13 +1,20 @@
 import React from 'react';
 import { workstation } from '../constants';
+import Title from './Title';
+import SubHaeading from './SubHaeading';
 
 const Workspace = () => {
   return (
     <section className="w-full bg-cream pt-24 pb-34 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 mb-24 max-md:mb-16 text-center">
+      <div className="max-w-7xl mx-auto px-4 max-sm:hidden md:px-8 mb-24 max-md:mb-16 text-center">
         <h2 className="font-display text-5xl md:text-7xl font-bold uppercase tracking-tight text-black">
           My Workstation
         </h2>
+      </div>
+
+      <div className='sm:hidden px-4'>
+        <SubHaeading subTitle={'Workstation'}/>
+         <Title title={'My Workstation'}/>
       </div>
 
       <div className="relative w-full flex overflow-hidden">
