@@ -28,7 +28,7 @@ const Hero = () => {
     })
   })
     return (
-        <section id='home' className=" relative min-h-screen w-full overflow-hidden flex flex-col justify-end pt-20 pb-10 md:pb-0">
+        <section id='home' className=" relative sm:min-h-screen h-[90vh] w-full overflow-hidden flex flex-col justify-end pt-20 pb-10 md:pb-0">
             {/* Background Gradient Spot */}
             {/* <div className=" absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px]   rounded-full blur-[120px] pointer-events-none z-1" /> */}
             <img src={bghero} alt="" className='absolute top-0 w-screen h-screen z-0' />
