@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Home, BriefcaseBusiness, User, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { nav_links } from '../constants';
+
 
 const MobileBottomNav = () => {
   const [activeTab, setActiveTab] = useState('Home');

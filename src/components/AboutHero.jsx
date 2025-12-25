@@ -17,6 +17,7 @@ const AboutHero = () => {
        
         <div className="relative z-0 w-full h-120 overflow-hidden rounded rounded-b-[170px] shadow-sm">
           <img
+          loading='lazy'
             src={profile}
             alt="Portrait of the developer"
             className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700 ease-out"

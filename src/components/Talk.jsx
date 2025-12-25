@@ -103,6 +103,7 @@ const Talk = () => {
                             <div className="w-24 h-24 rounded-full overflow-hidden mb-8 border-2 border-[#fbf9f4] shadow-sm ">
                                 <img
                                     src={menuprofile}
+                                    loading='lazy'
                                     alt="Portrait"
                                     className="w-full h-full object-cover"
                                 />

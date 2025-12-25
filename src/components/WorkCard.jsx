@@ -19,6 +19,7 @@ const WorkCard = (project) => {
                 <img
 
                     src={project.image}
+                    loading='lazy'
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                 />

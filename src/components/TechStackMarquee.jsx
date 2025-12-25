@@ -5,43 +5,43 @@ const techStack = [
   {
     name: 'React js',
     icon: (
-      <img src="http://cdn.worldvectorlogo.com/logos/react-2.svg" alt="" className='w-6 h-6'/>
+      <img src="http://cdn.worldvectorlogo.com/logos/react-2.svg" loading='lazy' alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'Node js',
     icon: (
-      <img src="http://cdn.worldvectorlogo.com/logos/nodejs-3.svg" alt="" className='w-6 h-6'/>
+      <img src="http://cdn.worldvectorlogo.com/logos/nodejs-3.svg" loading='lazy' alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'Express js',
     icon: (
-      <img src='https://cdn.worldvectorlogo.com/logos/expressjs.svg' alt="" className='w-6 h-6'/>
+      <img src='https://cdn.worldvectorlogo.com/logos/expressjs.svg' loading='lazy' alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'Firebase',
     icon: (
-     <img src='https://cdn.worldvectorlogo.com/logos/firebase-1.svg' alt="" className='w-6 h-6'/>
+     <img src='https://cdn.worldvectorlogo.com/logos/firebase-1.svg' loading='lazy' alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'Mongodb',
     icon: (
-      <img src='https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg' alt="" className='w-6 h-6'/>
+      <img src='https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg' loading='lazy' alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'GSAP',
     icon: (
-      <img src='https://cdn.worldvectorlogo.com/logos/g-j.svg' alt="" className='w-6 h-6'/>
+      <img src='https://cdn.worldvectorlogo.com/logos/g-j.svg' loading='lazy' alt="" className='w-6 h-6'/>
     ),
   },
   {
     name: 'JavaScript',
     icon: (
-      <img src='https://cdn.worldvectorlogo.com/logos/javascript-1.svg' alt="" className='w-6 h-6'/>
+      <img src='https://cdn.worldvectorlogo.com/logos/javascript-1.svg' loading='lazy' alt="" className='w-6 h-6'/>
     ),
   },
   {

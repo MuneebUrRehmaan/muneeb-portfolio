@@ -43,7 +43,7 @@ const Footer = () => {
           <div className="md:col-span-5 flex flex-col justify-between h-full">
             <div className="mb-6">
               <a href="/" className="">
-                <img src={herologo} alt="" className='w-40'/>
+                <img src={herologo} loading='lazy' alt="" className='w-40'/>
               </a>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">

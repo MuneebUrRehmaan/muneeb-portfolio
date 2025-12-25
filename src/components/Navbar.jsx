@@ -27,7 +27,7 @@ const Navbar = () => {
                         <div className="shrink-0">
                             <a
                                 href="/">
-                                <img src={herologo} alt="" className='w-15'/>
+                                <img src={herologo} loading='lazy' alt="" className='w-15'/>
                             </a>
                         </div>
                         <div className=" hidden md:flex items-center  justify-center gap-8">
@@ -49,7 +49,7 @@ const Navbar = () => {
                         {/* Mobile Menu Button */}
                         <div className="relative md:hidden">
                             
-                            <img src={menuprofile} alt="" className=' w-14 h-14 rounded-full border border-[#f3eede] object-cover' />
+                            <img src={menuprofile} loading='lazy' alt="" className=' w-14 h-14 rounded-full border border-[#f3eede] object-cover' />
                         </div>
                     </div>
                 </div>
