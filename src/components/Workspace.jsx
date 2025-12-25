@@ -19,16 +19,16 @@ const Workspace = () => {
 
       <div className="relative w-full flex overflow-hidden">
         {/* Track 1 */}
-        <div className="flex animate-scroll">
+        <div className="flex animate-scroll ">
           {workstation.map(item => (
-            <div key={`a-${item.id}`} className="shrink-0 w-160 max-sm:w-100  mr-6 overflow-hidden">
-              <img src={item.image} alt={item.alt} className="w-full h-90 max-sm:h-60 object-cover rounded " />
+            <div key={`a-${item.id}`} className="shrink-0 w-160 max-sm:w-100   mr-6 overflow-hidden ">
+              <img src={item.image} alt={item.alt} className="w-full shadow-sm h-90 max-sm:h-60 object-cover rounded " />
             </div>
           ))}
           {/* Duplicate for seamless effect */}
           {workstation.map(item => (
-            <div key={`b-${item.id}`} className="shrink-0 w-160 max-sm:w-100   mr-6 overflow-hidden">
-              <img src={item.image} alt={item.alt} className="w-full h-90 max-sm:h-60 object-cover rounded" />
+            <div key={`b-${item.id}`} className="shrink-0 w-160 max-sm:w-100    mr-6 overflow-hidden">
+              <img src={item.image} alt={item.alt} className="w-full h-90 shadow-sm max-sm:h-60 object-cover rounded" />
             </div>
           ))}
         </div>

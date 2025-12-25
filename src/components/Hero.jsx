@@ -30,7 +30,7 @@ const Hero = () => {
     return (
         <section id='home' className=" relative min-h-screen w-full overflow-hidden flex flex-col justify-end pt-20 pb-10 md:pb-0">
             {/* Background Gradient Spot */}
-            <div className=" absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px]  rounded-full blur-[120px] pointer-events-none z-1" />
+            {/* <div className=" absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px]   rounded-full blur-[120px] pointer-events-none z-1" /> */}
             <img src={bghero} alt="" className='absolute top-0 w-screen h-screen z-0' />
             {/* Main Content Container */}
             <div className="max-w-7xl relative z-10  mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:block h-full grow">
@@ -42,12 +42,11 @@ const Hero = () => {
                             ref={imgRef}
                             src={profile2}
                             alt="Portrait of Madison"
-                            className="w-full max-md:ml-20 max-sm:ml-30 lg:h-[90vh] max-md:h-[90vh] h-full  object-cover  object-top md:object-contain mix-blend-normal mask-image-gradient"
+                            className="w-full max-md:ml-20 max-sm:ml-30 lg:h-screen max-md:h-screen h-full  object-cover  object-top md:object-contain "
                             
                         />
                     </div>
                 </div>
-
 
 
 
@@ -90,7 +89,7 @@ const Hero = () => {
                         <h2 className="font-display font-bold text-3xl max-sm:text-4xl md:text-5xl  drop-shadow-xs  max-md:drop-shadow-gray-300 lg:text-4xl text-black/90 uppercase leading-none max-w-xs md:max-w-md text-left  tracking-tight">
                             Creative <br /> <TextType
                                 text={["Frontend", "Backend", "FullStack"]}
-                                typingSpeed={75}
+                                typingSpeed={140}
                                 pauseDuration={1500}
                                 showCursor={true}
                                 cursorCharacter="_"

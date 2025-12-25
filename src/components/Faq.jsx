@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Sparkles, ChevronDown } from 'lucide-react';
 import { faq_data } from '../constants';
 import SubHaeading from './SubHaeading';
+import Title from './Title';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -17,9 +18,7 @@ const FAQ = () => {
         {/* Left Side - Title */}
         <div className="lg:col-span-5">
           <SubHaeading subTitle={'FAQ'} />
-          <h2 className="font-display text-6xl  font-bold text-black tracking-tight leading-[0.9] mb-8">
-            Have <br /> Questions ?
-          </h2>
+          <Title title={'Frequently Asked Questions'} />
         </div>
 
         {/* Right Side - Accordion */}
@@ -27,7 +26,7 @@ const FAQ = () => {
           {faq_data.map((item, index) => (
             <div
               key={index}
-              className={`bg-white rounded transition-all duration-300 overflow-hidden border-gray-200 ${
+              className={`bg-[#faf9f6] rounded transition-all duration-300 overflow-hidden border-gray-200 ${
                 openIndex === index
                   ? 'shadow-sm border-gray-200'
                   : 'border-gray-200 border hover:border-gray-200'

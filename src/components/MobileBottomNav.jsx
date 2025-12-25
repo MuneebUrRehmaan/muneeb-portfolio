@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Briefcase, User, Phone } from 'lucide-react';
+import { Home, BriefcaseBusiness, User, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { nav_links } from '../constants';
 
@@ -12,7 +12,7 @@ const MobileBottomNav = () => {
 
   const navItems = [
     { name: 'Home', icon: Home, href: 'muneeb-portfolio/' },
-    { name: 'Projects', icon: Briefcase, href: 'muneeb-portfolio/projects' },
+    { name: 'Projects', icon: BriefcaseBusiness , href: 'muneeb-portfolio/projects' },
     { name: 'About', icon: User, href: 'muneeb-portfolio/about' },
     { name: 'Contact', icon: Phone, href: 'muneeb-portfolio/contact' },
   ];
@@ -20,7 +20,7 @@ const MobileBottomNav = () => {
   return (
     <div className="sm:hidden fixed bottom-0 left-0 right-0 z-100">
       {/* Navigation Bar Container */}
-      <div className="bg-white shadow-[0_-1px_30px_rgba(0,0,0,0.07)] border-t border-gray-50 pt-5 pb-2 px-6">
+      <div className="bg-[#fbf9f4] shadow-[0_-1px_30px_rgba(0,0,0,0.07)] border-t border-gray-50 pt-3 pb-2 px-6">
         <div className="flex items-center justify-between max-w-md mx-auto">
           {navItems.map((item) => {
             const isActive = activeTab === item.name;

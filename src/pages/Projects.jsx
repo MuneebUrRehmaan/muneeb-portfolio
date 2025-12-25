@@ -17,7 +17,7 @@ const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mb-20 max-sm:mb-10">
                     {projects.map((project) => {
                         return (
-                           <WorkCard title={project.title} image= {project.image} category={project.category} link={project.link}/>
+                           <WorkCard key={project.id} title={project.title} image= {project.image} category={project.category} link={project.link}/>
                         )
                     }
 

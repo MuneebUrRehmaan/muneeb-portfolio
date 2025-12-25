@@ -70,11 +70,11 @@ export const ProcessSection = () => {
           
         </div>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 pb-8">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative p-8 bg-gray-50 rounded border border-gray-100 shadow-sm overflow-hidden"
+              className="relative p-8 bg-[#faf9f6] rounded border border-gray-100 shadow-sm overflow-hidden"
             >
               <div className="flex flex-col gap-6 relative z-10">
                 <div
@@ -90,9 +90,9 @@ export const ProcessSection = () => {
                 </div>
               </div>
 
-              <span className="absolute -right-4 -bottom-8 text-[10rem] font-bold text-gray-50">
+              {/* <span className="absolute -right-4 -bottom-8 text-[10rem] font-bold text-gray-50">
                 {step.number}
-              </span>
+              </span> */}
             </div>
           ))}
         </div>

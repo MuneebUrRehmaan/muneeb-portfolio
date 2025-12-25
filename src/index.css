@@ -10,14 +10,19 @@
 html{
    scroll-behavior: smooth;
 }
-body{
-  overflow-x: hidden;
-}
 
-.aa.active{
-  color: black;
-  color: #f16f12;
-}
+
+ body {
+      background-color: #fffdf5;
+      scroll-behavior:smooth;
+       overflow-x: hidden;
+    }
+
+    /* Custom utility for text stroke if needed, though pure tailwind is preferred */
+    .text-outline-white {
+      -webkit-text-stroke: 1px white;
+    }
+
 
 .experience-section {
   position: relative;/* hide default cursor */
@@ -77,7 +82,7 @@ body{
 .animate-scroll {
   display: flex;
   flex-wrap: nowrap;
-  animation: scroll-infinite 20s linear infinite;
+  animation: scroll-infinite 26s linear infinite;
 }
 
 .mobile-nav {

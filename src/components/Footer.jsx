@@ -1,5 +1,5 @@
 import { ArrowUpRight, Heart } from 'lucide-react';
-import {  contact, nav_links, social } from '../constants';
+import {  contact, herologo, nav_links, social } from '../constants';
 import { Link} from 'react-router-dom'
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
         
         {/* Top Section: Call to Action */}
         <div className="flex flex-col items-center text-center mb-24">
-          <span className="text-orange-400 font-medium tracking-[0.2em] uppercase mb-6 text-sm md:text-base animate-pulse">
+          <span className="text-orange-500 font-medium tracking-[0.2em] uppercase mb-6 text-sm md:text-base animate-pulse">
             What's Next?
           </span>
           <h2 className="text-white font-display text-6xl  font-bold uppercase tracking-normal mb-10 leading-[0.9]">
@@ -42,13 +42,13 @@ const Footer = () => {
           {/* Brand & Copyright - Spans 5 columns */}
           <div className="md:col-span-5 flex flex-col justify-between h-full">
             <div className="mb-6">
-              <a href="/" className="font-serif text-3xl md:text-4xl font-bold italic tracking-tight text-white inline-block hover:text-orange-200 transition-colors">
-                Muneeb
+              <a href="/" className="">
+                <img src={herologo} alt="" className='w-40'/>
               </a>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">
-              &copy; {new Date().getFullYear()} Madison Portfolio. All rights reserved. <br/>
-              Designed & Developed with <Heart className="inline w-3.5 h-3.5 text-red-500 mx-1 fill-current" /> for the web.
+              &copy; {new Date().getFullYear()} Muneeb's Portfolio. All rights reserved. <br/>
+              Contact: 0305-3010428
             </p>
           </div>
 
@@ -63,13 +63,17 @@ const Footer = () => {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <Link to='muneeb-portfolio/contact' onClick={()=>{hash()}} className="text-gray-400 hover:text-white transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
+                  Contact</Link>
+                </li>
              </ul>
           </div>
 
           {/* Socials - Spans 4 columns */}
-          <div className="md:col-span-4 max-sm:mb-16">
+          <div className="md:col-span-4 max-sm:mb-13">
              <h3 className="text-white font-bold uppercase tracking-widest text-xs mb-8 text-opacity-80">Socials</h3>
-             <ul className="grid grid-cols-2 gap-x-4 gap-y-4">
+             <ul className="grid  grid-cols-2  sm:gap-x-4 gap-y-4 w-full">
                 {social.map(link => (
                   <li key={link.label}>
                     <Link to={link.href} target='_blank' className="text-gray-400 hover:text-orange-200 transition-colors duration-200 text-base font-medium flex items-center gap-2 group">
@@ -78,6 +82,9 @@ const Footer = () => {
                     </Link>
                   </li>
                 ))}
+                <li title='0305-3010428' className=" cursor-pointer text-gray-400 hover:text-orange-200 transition-colors duration-200 text-base font-medium flex items-center gap-2 group">
+                  Contact<span  className="sm:opacity-0 opacity-100 group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100 transition-all whitespace-nowrap" >: 0305-3010428</span>
+                  </li>
              </ul>
           </div>
         </div>

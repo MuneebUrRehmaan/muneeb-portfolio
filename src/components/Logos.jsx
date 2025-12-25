@@ -13,8 +13,8 @@ const Logos = () => {
       case 'mongo db': return <Leaf size={28} />;
       case 'node js': return <Braces size={28} />;
       case 'next js': return <Box size={28} />;
-      case 'miro': return <Grid size={28} />;
-      case 'relume': return <Hexagon size={28} />;
+      case 'firebase': return <Grid size={28} />;
+      case 'stripe': return <Hexagon size={28} />;
       default: return <Box size={28} />;
     }
   };

@@ -8,13 +8,13 @@ import {SlideUp} from '../animations/gsapAnimation'
 
 const AboutHero = () => {
   return (
-    <section className="px-2 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+    <section className="md:px-8 px-4 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
       
       {/* Left Column: Image Container */}
       <div className="relative lg:w-1/3 max-w-[500px] lg:max-w-none max-sm:hidden">
         
         {/* Image Mask Wrapper */}
-        
+       
         <div className="relative z-0 w-full h-120 overflow-hidden rounded rounded-b-[170px] shadow-sm">
           <img
             src={profile}
@@ -23,7 +23,7 @@ const AboutHero = () => {
           />
 
           {/* Optional overlay */}
-          <div className="absolute inset-0 bg-black/5 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-black/3 pointer-events-none"></div>
         </div>
 
         {/* Floating Badge */}
@@ -38,7 +38,7 @@ const AboutHero = () => {
           A <span className="text-orange-400/90 max-sm:text-[32px]">
           <TextType
                                 text={["Frontend Developer", "Backend Developer", "FullStack Developer"]}
-                                typingSpeed={75}
+                                typingSpeed={120}
                                 pauseDuration={1500}
                                 showCursor={true}
                                 cursorCharacter=""

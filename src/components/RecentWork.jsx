@@ -34,7 +34,7 @@ const RecentProjects = () => {
 
                     {recentWork.map((project) => {
                             return (
-                                <WorkCard title={project.title} image= {project.image} category={project.category} link={project.link}/>
+                                <WorkCard key={project.id} title={project.title}  image= {project.image} category={project.category} link={project.link}/>
                             )
                     })}
 
@@ -42,7 +42,7 @@ const RecentProjects = () => {
 
                 {/* View All Button */}
                 <div className="flex justify-around items-center w-full">
-                    <hr className='w-10 hidden max-sm:block h-1 bg-orange-400/80 rounded-bl-2xl rounded-tl-2xl border-none'/>
+                    <hr className='w-12 hidden max-sm:block h-1 bg-orange-400/80 rounded-bl-2xl rounded-tl-2xl border-none'/>
                     <Link
                         onClick={()=>{hash()}}
                         to="projects#works"
@@ -51,7 +51,7 @@ const RecentProjects = () => {
                       <Button title={"VIEW ALL PROJECTS"} className={'pt-4 pb-4 pl-8 pr-8 text-gray-50 bg-[#1b1b1b]'}/>
                     </Link>
 
-                    <hr className='w-10 hidden max-sm:block h-1 bg-orange-400/80 rounded-br-2xl rounded-tr-2xl border-none'/>
+                    <hr className='w-12 hidden max-sm:block h-1 bg-orange-400/80 rounded-br-2xl rounded-tr-2xl border-none'/>
                 </div>
             </div>
         </section>

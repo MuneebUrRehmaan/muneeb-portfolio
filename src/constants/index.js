@@ -45,8 +45,8 @@ export const logos = [
   { name: "Mongo db", icon: "mango" },
   { name: "Node js", icon: "node" },
   { name: "Webflow", icon: "webflow" },
-  { name: "Miro", icon: "miro" },
-  { name: "Relume", icon: "relume" }
+  { name: "Firebase", icon: "firebase" },
+  { name: "Stripe", icon: "Stripe" }
 ];
 
 
@@ -121,9 +121,9 @@ export const about = {
   description:
     "With a deep passion for the MERN stack, I've dedicated my career to building scalable, high-performance web applications. My journey began with a curiosity for how things work on the web and evolved into a full-blown obsession with React, Node.js, and modern UI architecture. I love turning complex problems into simple, beautiful, and intuitive interface designs.",
   stats: [
-    { label: "Years Experience", value: "03+" },
-    { label: "Projects Done", value: "30+" },
-    { label: "Hours Worked", value: "8K+" }
+    { label: "Years Experience", value: "02+" },
+    { label: "Projects Done", value: "20+" },
+    { label: "Hours Worked", value: "5K+" }
   ],
   videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-typing-on-mechanical-keyboard-4249-large.mp4",
 };
@@ -131,17 +131,17 @@ export const about = {
 // Experience Section
 export const experience = [
   {
-    period: "2020-24",
+    period: "2023-24",
     role: "Frontend Development",
     skills: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS"]
   },
   {
-    period: "2021-24",
+    period: "2024-25",
     role: "Backend & Database",
     skills: ["PHP", "MySQL", "Node.js", "Express"]
   },
   {
-    period: "2023-24",
+    period: "2025",
     role: "MERN Stack Journey",
     skills: ["MongoDB", "Express", "React", "Node.js"]
   }
@@ -205,9 +205,8 @@ export const workstation = [
 
 export const social = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/muneeb-ur-rehman-3aa98a27a/' },
-  { label: 'Twitter', href: '#' },
-  { label: 'Instagram', href: '#' },
-  { label: 'GitHub', href: 'https://github.com/MuneebUrRehmaan' }
+  { label: 'GitHub', href: 'https://github.com/MuneebUrRehmaan' },
+  { label: 'Instagram', href: 'https://www.instagram.com/muneeb_ur_rehman_50?igsh=dTZ0ZmdreTh1aWVo' }
 ];
 
 export const contact = {
