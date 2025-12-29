@@ -6,46 +6,25 @@ import { Route, Routes } from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
-import { useLayoutEffect, useRef } from 'react'
-import gsap from 'gsap'
 import CustomCursor from './components/CustomCursor'
 import MobileBottomNav from './components/MobileBottomNav'
 
 const App = () => {
-  //  const cursorRef = useRef(null);
 
-  // useLayoutEffect(() => {
-  //   const cursor = cursorRef.current;
-
-  //   const moveCursor = (e) => {
-  //     gsap.to(cursor, {
-  //       x: e.clientX+8,
-  //       y: e.clientY-8,
-        
-  //     });
-      
-  //   };
-
-  //   window.addEventListener("mousemove", moveCursor);
-
-  //   return () => window.removeEventListener("mousemove", moveCursor);
-  // }, []);
-   
   return (
     <div className='relative'>
-      
-  <CustomCursor />
-    <Navbar />
-    <MobileBottomNav />
-    <div className="bg-[#f9f6ed] min-h-screen w-full text-gray-900 antialiased font-sans selection:bg-orange-200 selection:text-orange-900">
-      <Routes>
-        <Route path='muneeb-portfolio/' element={<Homepage />} />
-        <Route path='muneeb-portfolio/projects' element={<Projects />} />
-        <Route path='muneeb-portfolio/about' element={<AboutPage />} />
-        <Route path='muneeb-portfolio/contact' element={<Contact />} />
-      </Routes>
-    </div>
-    <Footer />
+      <CustomCursor />
+      <Navbar />
+      <MobileBottomNav />
+      <div className="bg-[#f9f6ed] min-h-screen w-full text-gray-900 antialiased font-sans selection:bg-orange-200 selection:text-orange-900">
+        <Routes>
+          <Route path='muneeb-portfolio/' element={<Homepage />} />
+          <Route path='muneeb-portfolio/projects' element={<Projects />} />
+          <Route path='muneeb-portfolio/about' element={<AboutPage />} />
+          <Route path='muneeb-portfolio/contact' element={<Contact />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   )
 }

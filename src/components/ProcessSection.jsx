@@ -1,11 +1,9 @@
-import React, { useRef } from 'react';
 import {
   PenTool,
   PencilRuler,
   Code,
   ShieldCheck,
-  Lightbulb,
-  ArrowRight
+  Lightbulb
 } from 'lucide-react';
 import Title from './Title';
 import SubHaeading from './SubHaeading';
@@ -59,44 +57,44 @@ const steps = [
 ];
 
 export const ProcessSection = () => {
-  
+
 
   return (
-      
-      <section className="block  w-full py-20 px-4 md:px-8">
-        <div className="mb-12">
-          <SubHaeading subTitle={'Steps I Follow'}/>
-          <Title title={'My Process'} />
-          
-        </div>
 
-        <div className="flex flex-col gap-8 pb-8">
-          {steps.map((step, index) => (
-            <div
-              key={index}
-              className="relative p-8 bg-[#faf9f6] rounded border border-gray-100 shadow-sm overflow-hidden"
-            >
-              <div className="flex flex-col gap-6 relative z-10">
-                <div
-                  className={`w-14 h-14 flex items-center rounded justify-center  ${step.color}`}
-                >
-                  {step.icon}
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-lg text-gray-600">{step.description}</p>
-                </div>
+    <section className="block  w-full py-20 px-4 md:px-8">
+      <div className="mb-12">
+        <SubHaeading subTitle={'Steps I Follow'} />
+        <Title title={'My Process'} />
+
+      </div>
+
+      <div className="flex flex-col gap-8 pb-8">
+        {steps.map((step, index) => (
+          <div
+            key={index}
+            className="relative p-8 bg-[#faf9f6] rounded border border-gray-100 shadow-sm overflow-hidden"
+          >
+            <div className="flex flex-col gap-6 relative z-10">
+              <div
+                className={`w-14 h-14 flex items-center rounded justify-center  ${step.color}`}
+              >
+                {step.icon}
               </div>
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-lg text-gray-600">{step.description}</p>
+              </div>
+            </div>
 
-              {/* <span className="absolute -right-4 -bottom-8 text-[10rem] font-bold text-gray-50">
+            {/* <span className="absolute -right-4 -bottom-8 text-[10rem] font-bold text-gray-50">
                 {step.number}
               </span> */}
-            </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        ))}
+      </div>
+    </section>
 
   );
 };

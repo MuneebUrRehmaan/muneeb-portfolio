@@ -1,12 +1,11 @@
-import React from 'react';
 import { logos } from '../constants';
-import { LayoutTemplate,  Atom, Figma, Leaf, Hexagon, Box, Braces,Grid } from 'lucide-react';
+import { LayoutTemplate, Atom, Figma, Leaf, Hexagon, Box, Braces, Grid } from 'lucide-react';
 
 const Logos = () => {
 
   // Helper to get icon based on name
   const getIcon = (name) => {
-    switch(name.toLowerCase()) {
+    switch (name.toLowerCase()) {
       case 'figma': return <Figma size={28} />;
       case 'react': return <Atom size={28} />;
       case 'webflow': return <LayoutTemplate size={28} />;
@@ -60,8 +59,8 @@ const Logos = () => {
           ))}
         </div>
 
-        
-       
+
+
 
       </div>
     </section>

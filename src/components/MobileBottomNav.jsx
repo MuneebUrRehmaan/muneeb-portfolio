@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Home, BriefcaseBusiness, User, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -7,12 +7,12 @@ const MobileBottomNav = () => {
   const [activeTab, setActiveTab] = useState('Home');
 
   const hash = () => {
-        window.scrollTo(0, 0)
-    }
+    window.scrollTo(0, 0)
+  }
 
   const navItems = [
     { name: 'Home', icon: Home, href: 'muneeb-portfolio/' },
-    { name: 'Projects', icon: BriefcaseBusiness , href: 'muneeb-portfolio/projects' },
+    { name: 'Projects', icon: BriefcaseBusiness, href: 'muneeb-portfolio/projects' },
     { name: 'About', icon: User, href: 'muneeb-portfolio/about' },
     { name: 'Contact', icon: Phone, href: 'muneeb-portfolio/contact' },
   ];
@@ -28,18 +28,17 @@ const MobileBottomNav = () => {
 
             return (
               <Link
-              to={item.href}
+                to={item.href}
                 key={item.name}
-                onClick={() => {setActiveTab(item.name), hash()}}
+                onClick={() => { setActiveTab(item.name), hash() }}
                 className="flex flex-col items-center gap-1 min-w-[70px] transition-all duration-300 active:scale-95"
               >
                 <div className="relative">
                   <Icon
                     size={24}
                     strokeWidth={isActive ? 2.5 : 1.5}
-                    className={`${
-                      isActive ? 'text-orange-400' : 'text-gray-400'
-                    } transition-colors duration-300`}
+                    className={`${isActive ? 'text-orange-400' : 'text-gray-400'
+                      } transition-colors duration-300`}
                   />
 
                   {isActive && (
@@ -48,9 +47,8 @@ const MobileBottomNav = () => {
                 </div>
 
                 <span
-                  className={`text-[9px] font-bold tracking-tight ${
-                    isActive ? 'text-orange-400' : 'text-gray-400'
-                  } transition-colors duration-300`}
+                  className={`text-[9px] font-bold tracking-tight ${isActive ? 'text-orange-400' : 'text-gray-400'
+                    } transition-colors duration-300`}
                 >
                   {item.name}
                 </span>

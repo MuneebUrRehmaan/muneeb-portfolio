@@ -1,4 +1,3 @@
-import React from 'react';
 import { about, yo } from '../constants';
 import SubHaeading from './SubHaeading';
 
@@ -15,7 +14,7 @@ const About = () => {
         <div className="order-2 lg:order-2 flex flex-col gap-8">
 
           <div>
-            <SubHaeading subTitle={'My Journey'}/>
+            <SubHaeading subTitle={'My Journey'} />
 
             <h2 className="font-display text-6xl max-md:text-4xl font-bold text-black uppercase leading-none tracking-tight">
               {about.title}

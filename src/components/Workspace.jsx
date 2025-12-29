@@ -13,8 +13,8 @@ const Workspace = () => {
       </div>
 
       <div className='sm:hidden px-4'>
-        <SubHaeading subTitle={'Workstation'}/>
-         <Title title={'My Workstation'}/>
+        <SubHaeading subTitle={'Workstation'} />
+        <Title title={'My Workstation'} />
       </div>
 
       <div className="relative w-full flex overflow-hidden">

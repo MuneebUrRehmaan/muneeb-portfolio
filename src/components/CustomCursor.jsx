@@ -1,7 +1,7 @@
-import React, { useRef, useLayoutEffect, useState } from "react";
+import  { useRef, useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 import { ws1, ws2, ws3, ws4, ws5, ws6 } from "../constants";
-import {ArrowUpRight} from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 const CustomCursor = () => {
   const images = [ws1, ws2, ws3, ws4, ws5, ws6];
@@ -23,13 +23,13 @@ const CustomCursor = () => {
       gsap.to(dot, {
         x: e.clientX + 8,
         y: e.clientY - 8,
-        
+
       });
 
       gsap.to(img, {
         x: e.clientX + 20,
         y: e.clientY - 20,
-        
+
       });
     };
 

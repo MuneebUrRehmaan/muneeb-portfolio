@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { faq_data } from '../constants';
 import SubHaeading from './SubHaeading';
 import Title from './Title';
@@ -14,7 +14,7 @@ const FAQ = () => {
   return (
     <section className="component-gap">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-        
+
         {/* Left Side - Title */}
         <div className="lg:col-span-5">
           <SubHaeading subTitle={'FAQ'} />
@@ -26,11 +26,10 @@ const FAQ = () => {
           {faq_data.map((item, index) => (
             <div
               key={index}
-              className={`bg-[#faf9f6] rounded transition-all duration-300 overflow-hidden border-gray-200 ${
-                openIndex === index
+              className={`bg-[#faf9f6] rounded transition-all duration-300 overflow-hidden border-gray-200 ${openIndex === index
                   ? 'shadow-sm border-gray-200'
                   : 'border-gray-200 border hover:border-gray-200'
-              }`}
+                }`}
             >
               <button
                 onClick={() => toggleFAQ(index)}
@@ -45,18 +44,16 @@ const FAQ = () => {
                 </span>
 
                 <span
-                  className={`shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-gray-50 border border-gray-100 transition-transform duration-300 ${
-                    openIndex === index ? 'rotate-180 bg-black text-gray-500' : 'text-gray-500'
-                  }`}
+                  className={`shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-gray-50 border border-gray-100 transition-transform duration-300 ${openIndex === index ? 'rotate-180 bg-black text-gray-500' : 'text-gray-500'
+                    }`}
                 >
                   <ChevronDown size={18} />
                 </span>
               </button>
 
               <div
-                className={`grid transition-all duration-300 ease-in-out ${
-                  openIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
-                }`}
+                className={`grid transition-all duration-300 ease-in-out ${openIndex === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+                  }`}
               >
                 <div className="overflow-hidden">
                   <p className="text-gray-500 leading-relaxed text-base md:text-lg pl-18 pr-8 pb-8">

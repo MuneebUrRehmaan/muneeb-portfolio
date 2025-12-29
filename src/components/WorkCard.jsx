@@ -1,7 +1,4 @@
-import React from 'react'
 import Button from './Button'
-
-
 
 const WorkCard = (project) => {
     return (
@@ -21,7 +18,7 @@ const WorkCard = (project) => {
                     src={project.image}
                     loading='lazy'
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+                    className="w-full h-full object-cover "
                 />
 
             </div>
@@ -40,7 +37,7 @@ const WorkCard = (project) => {
 
                     {/* Visit Website */}
                     <a href={project.link} target='_blank'>
-                        <Button title={'Live Link'} className={'text-gray-50 bg-[#1b1b1b]'}/></a>
+                        <Button title={'Live Link'} className={'text-gray-50 bg-[#1b1b1b]'} /></a>
                 </div>
             </div>
         </div>

@@ -1,6 +1,4 @@
-import React from 'react'
 import AboutHero from '../components/AboutHero'
-import { Section } from 'lucide-react'
 import TechStackMarquee from '../components/TechStackMarquee'
 import Hero from '../components/Hero'
 import About from '../components/About'
@@ -10,21 +8,21 @@ import { ProcessSection } from '../components/ProcessSection'
 const AboutPage = () => {
   return (
     <section>
-        <div className='max-sm:hidden pt-24 '>
-            <AboutHero />
+      <div className='max-sm:hidden pt-24 '>
+        <AboutHero />
         <TechStackMarquee />
-        </div>
+      </div>
 
-        <div className='max-sm:block hidden'>
-         <Hero />
-         <Logos />
-         <About />
+      <div className='max-sm:block hidden'>
+        <Hero />
+        <Logos />
+        <About />
 
-        </div>
+      </div>
 
 
-        <ProcessSection />
-        
+      <ProcessSection />
+
     </section>
   )
 }

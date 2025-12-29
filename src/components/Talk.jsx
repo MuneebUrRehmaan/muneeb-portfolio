@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import { Sparkles, Mail, Github, Linkedin, Instagram, Facebook } from 'lucide-react';
-import { avater, contact, menuprofile } from '../constants';
+import {  Mail, Github, Linkedin, Instagram, Facebook } from 'lucide-react';
+import {contact, menuprofile } from '../constants';
 import Button from './Button';
 import SubHaeading from "./SubHaeading";
 import Title from "./Title";
@@ -9,27 +9,27 @@ import Title from "./Title";
 const Talk = () => {
 
     const form = useRef();
-    
- const sendEmail = (e) => {
-    e.preventDefault();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
 
 
 
-    emailjs.sendForm(
-        'service_y83tbkg',
-        'template_r80rac8',
-        form.current,
-        'k-D3emlF-XR_IxUWo'
-    )
-    .then(() => {
-        alert("Message sent successfully!");
-        form.current.reset();
-    })
-    .catch((error) => {
-        console.error(error);
-        alert("Failed to send message!");
-    });
-};
+        emailjs.sendForm(
+            'service_y83tbkg',
+            'template_r80rac8',
+            form.current,
+            'k-D3emlF-XR_IxUWo'
+        )
+            .then(() => {
+                alert("Message sent successfully!");
+                form.current.reset();
+            })
+            .catch((error) => {
+                console.error(error);
+                alert("Failed to send message!");
+            });
+    };
 
     return (
         <section id="contact" className="component-gap">

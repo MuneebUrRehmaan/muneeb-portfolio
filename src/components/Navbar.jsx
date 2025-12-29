@@ -27,7 +27,7 @@ const Navbar = () => {
                         <div className="shrink-0">
                             <a
                                 href="/">
-                                <img src={herologo} loading='lazy' alt="" className='w-15'/>
+                                <img src={herologo} loading='lazy' alt="" className='w-15' />
                             </a>
                         </div>
                         <div className=" hidden md:flex items-center  justify-center gap-8">
@@ -43,12 +43,12 @@ const Navbar = () => {
                                 onClick={() => { hash() }}
                                 to='muneeb-portfolio/contact'
                             >
-                                <Button title={'Contact'} className={'text-gray-50 bg-[#212121]'}  />
+                                <Button title={'Contact'} className={'text-gray-50 bg-[#212121]'} />
                             </Link>
                         </div>
                         {/* Mobile Menu Button */}
                         <div className="relative md:hidden">
-                            
+
                             <img src={menuprofile} loading='lazy' alt="" className=' w-14 h-14 rounded-full border border-[#f3eede] object-cover' />
                         </div>
                     </div>

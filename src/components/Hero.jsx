@@ -1,36 +1,35 @@
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 import TextType from './TextType.jsx';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { bghero, hero, profile2 } from '../constants';
 
 const Hero = () => {
-  gsap.registerPlugin(useGSAP);
-  const imgRef = useRef()
-  const textRef = useRef()
-  const descRef = useRef()
+    gsap.registerPlugin(useGSAP);
+    const imgRef = useRef()
+    const textRef = useRef()
+    const descRef = useRef()
 
-  useGSAP(()=>{
-    gsap.from(imgRef.current,{
-     opacity: 0,
-     y:100,
-     duration: 1
-    }
-    ),
-    gsap.from(textRef.current, {
-     x:-370,
-     duration: 1
-    }),
-    gsap.from(descRef.current, {
-    opacity: 0,
-    scale: 0.5,
-     duration: 1
+    useGSAP(() => {
+        gsap.from(imgRef.current, {
+            opacity: 0,
+            y: 100,
+            duration: 1
+        }
+        ),
+            gsap.from(textRef.current, {
+                x: -370,
+                duration: 1
+            }),
+            gsap.from(descRef.current, {
+                opacity: 0,
+                scale: 0.5,
+                duration: 1
+            })
     })
-  })
     return (
         <section id='home' className=" relative sm:min-h-screen h-[90vh] w-full overflow-hidden flex flex-col justify-end pt-20 pb-10 md:pb-0">
-            {/* Background Gradient Spot */}
-            {/* <div className=" absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px]   rounded-full blur-[120px] pointer-events-none z-1" /> */}
+
             <img src={bghero} alt="" className='absolute top-0 w-screen h-screen z-0' />
             {/* Main Content Container */}
             <div className="max-w-7xl relative z-10  mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:block h-full grow">
@@ -44,7 +43,7 @@ const Hero = () => {
                             loading='lazy'
                             alt="Portrait of Madison"
                             className="w-full max-md:ml-20 max-sm:ml-30 lg:h-screen max-md:h-screen h-full  object-cover  object-top md:object-contain "
-                            
+
                         />
                     </div>
                 </div>
@@ -52,7 +51,7 @@ const Hero = () => {
 
 
                 {/* Main info */}
-                <div  className=" flex flex-col gap-4  z-20 absolute max-md:relative max-sm:mt-5 bottom-6">
+                <div className=" flex flex-col gap-4  z-20 absolute max-md:relative max-sm:mt-5 bottom-6">
                     <div className="w-fit flex  items-center gap-3 max-sm:gap-0  backdrop-blur-sm pl-2 pr-5 mt-4 rounded-full shadow-sm border border-white/50">
                         <span className="relative flex h-8 w-8 items-center justify-center rounded-full ">
                             <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-orange-400 opacity-80"></span>
@@ -65,7 +64,7 @@ const Hero = () => {
                             Available for work
                         </span>
                     </div>
-                    
+
 
                     <div ref={textRef} className="relative z-20 ">
                         <div className="flex flex-col leading-none select-none max-sm:ml-2">
@@ -80,7 +79,7 @@ const Hero = () => {
 
                 </div>
 
-                <div  className=' flex flex-col  gap-13 z-20 absolute  bottom-6 max-md:bottom-10  md:right-25 max-md:left-1 max-md:ml-4   '>
+                <div className=' flex flex-col  gap-13 z-20 absolute  bottom-6 max-md:bottom-10  md:right-25 max-md:left-1 max-md:ml-4   '>
                     <div ref={descRef} className="relative z-20 max-w-[280px] text-left max-md:hidden">
                         <p className="text-medium font text-gray-800 leading-[1.4]">
                             {hero.description}
