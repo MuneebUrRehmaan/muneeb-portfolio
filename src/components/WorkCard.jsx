@@ -8,17 +8,17 @@ const WorkCard = (project) => {
         >
 
             {/* Image */}
-            <div className="recent-work-item relative aspect-4/2 overflow-hidden" onMouseEnter={() => window.dispatchEvent(new Event("cursor-hover-button"))}
+            <div className="recent-work-item relative   aspect-4/2 overflow-hidden " onMouseEnter={() => window.dispatchEvent(new Event("cursor-hover-button"))}
                 onMouseLeave={() => window.dispatchEvent(new Event("cursor-hover-leave"))} >
 
-                <a href={project.link} target='_blank'><div className='cursor-none absolute w-full h-full bg-transparent z-14 '> </div> </a>
+                <a href={project.link} target='_blank'><div className='cursor-none group absolute w-full h-full bg-transparent z-14 '> </div> </a>
 
                 <img
 
                     src={project.image}
                     loading='lazy'
                     alt={project.title}
-                    className="w-full h-full object-cover "
+                    className="w-full h-full object-cover transition-all group-hover:scale-105 duration-300  "
                 />
 
             </div>

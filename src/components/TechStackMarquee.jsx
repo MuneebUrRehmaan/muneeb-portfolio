@@ -85,10 +85,10 @@ const TechStackMarquee = () => {
                 key={`${loop}-${index}`}
                 className="flex items-center gap-3 px-4 py-2 bg-[#faf9f6] rounded-full shadow-sm border border-gray-100 min-w-max hover:shadow-md transition-shadow group"
               >
-                <div className="w-6 h-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-4 h-6 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-300">
                   {tech.icon}
                 </div>
-                <span className="text-gray-700 font-medium text-lg whitespace-nowrap">
+                <span className="text-gray-700 font-medium  sm:text-lg whitespace-nowrap">
                   {tech.name}
                 </span>
               </div>

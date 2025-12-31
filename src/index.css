@@ -7,10 +7,13 @@
   }
 }
 
-
+html{
+  scroll-behavior:smooth;
+  color-scheme: light;
+}
  body {
       background-color: #fffdf5;
-      scroll-behavior:smooth;
+      
        overflow-x: hidden;
     }
 
@@ -25,8 +28,8 @@
 }
 
 .cursor-img {
-  width:240px;
-  height: 190px;
+  width:300px;
+  height: 230px;
   height: auto;
   opacity: 0;
   transform: scale(0.5);

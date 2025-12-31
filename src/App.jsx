@@ -13,7 +13,8 @@ const App = () => {
 
   return (
     <div className='relative'>
-      <CustomCursor />
+      <div className='max-sm:hidden'><CustomCursor /></div>
+      
       <Navbar />
       <MobileBottomNav />
       <div className="bg-[#f9f6ed] min-h-screen w-full text-gray-900 antialiased font-sans selection:bg-orange-200 selection:text-orange-900">

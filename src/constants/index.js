@@ -55,7 +55,7 @@ export const projects = [
   {
     id: 1,
     title: "Novashop",
-    category: "E Commerce",
+    category: "E-Commerce",
     image: pj1,
     link: "https://muneeburrehmaan.github.io/NovaShop.co/",
     code: 'https://github.com/muneeburrehmaan/NovaShop.co'
@@ -70,27 +70,28 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Weather Web",
-    category: "Weather Website",
+    title: "Weather Website",
+    category: "Weather App",
     image: pj3,
     link: "https://muneeburrehmaan.github.io/weatherapp/",
     code: 'https://github.com/muneeburrehmaan/Nikey-Shoes-Web'
   },
-  {
+   {
     id: 4,
+    title: "QuizFlow",
+    category: "Quiz App",
+    image: pj4,
+    link: "https://muneeburrehmaan.github.io/quizflow/",
+  },
+  {
+    id: 5,
     title: "Gallery",
     category: "Gallery project",
     image: pj5,
     link: "https://muneeburrehmaan.github.io/gallery-project/",
     code: 'https://github.com/muneeburrehmaan/gallery-project'
   },
-  {
-    id: 5,
-    title: "Portfolio",
-    category: "Mobile Application",
-    image: pj4,
-    link: "https://muneeburrehmaan.github.io/portfolio/"
-  },
+ 
   {
     id: 6,
     title: "Nikey Shoes Web",
