@@ -54,8 +54,8 @@ const Hero = () => {
                 <div className=" flex flex-col gap-4  z-20 absolute max-md:relative max-sm:mt-5 bottom-6">
                     <div className="w-fit flex  items-center gap-3 max-sm:gap-0  backdrop-blur-sm pl-2 pr-5 mt-4 rounded-full shadow-sm border border-white/50">
                         <span className="relative flex h-8 w-8 items-center justify-center rounded-full ">
-                            <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-orange-400 opacity-80"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                            <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#FF5F1F] opacity-80"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF5F1F]"></span>
                         </span>
                         <span className="text-xs  max-sm:hidden font-semibold tracking text-gray-800 uppercase">
                             {hero.availability}

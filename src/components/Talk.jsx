@@ -93,8 +93,8 @@ const Talk = () => {
                             {/* Availability */}
                             <div className="inline-flex items-center gap-3 bg-orange-50 px-4 py-2 rounded-full mb-10 w-fit self-start border border-gray-200">
                                 <span className="relative flex  items-center justify-center rounded-full ">
-                                    <span className="animate-ping absolute inline-flex h-2.5 w-2.5 rounded-full bg-orange-400 opacity-80"></span>
-                                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-orange-500/80"></span>
+                                    <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#FF5F1F] opacity-80"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF5F1F]"></span>
                                 </span>
                                 <span className="text-slate-900 text-sm font-semibold tracking-wide">Available for work</span>
                             </div>

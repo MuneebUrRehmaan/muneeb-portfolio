@@ -1,7 +1,22 @@
+import { useRef, useState } from 'react';
 import { about, yo } from '../constants';
 import SubHaeading from './SubHaeading';
+import { Play } from "lucide-react"; // optional icon
 
 const About = () => {
+  
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    videoRef.current.play();
+    videoRef.current.setAttribute('controls', 'controls');
+    videoRef.current.style.pointerEvents = 'auto';
+    videoRef.current.style.cursor = 'pointer';
+    videoRef.current.loop = true;
+    setIsPlaying(true);
+  };
+
   return (
     <section id="about" className="w-full bg-cream pt-28 max-sm:pt-12 pb-20 px-4 md:px-8 overflow-hidden relative">
 
@@ -46,15 +61,25 @@ const About = () => {
           <div className="relative rounded overflow-hidden shadow-2xl w-auto h-105 max-sm:h-60   group">
 
             <video
-              autoPlay
-              loop
-              muted
+              
+              ref={videoRef}
               className=" w-full h-full object-cover "
 
             >
               <source src={yo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+
+            {!isPlaying && (
+        <button
+          onClick={handlePlay}
+          className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-lg "
+        >
+          <div className="bg-[#F97316] p-4 rounded-full cursor-pointer hover:bg-[#F97316]/90 transition-all">
+            <Play size={32} className="text-white" />
+          </div>
+        </button>
+      )}
 
           </div>
         </div>

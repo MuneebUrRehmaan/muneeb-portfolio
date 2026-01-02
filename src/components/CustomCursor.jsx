@@ -90,13 +90,13 @@ const CustomCursor = () => {
       {/* DOT CURSOR */}
       <div
         ref={dotRef}
-        className="max-md:hidden fixed z-1000 flex w-2.5 h-2.5 justify-center items-center pointer-events-none"
+        className="max-md:hidden fixed z-1000 flex w-3 h-3 justify-center items-center pointer-events-none"
       >
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-400 opacity-100"></span>
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#FF5F1F] opacity-100"></span>
 
-        <span className="relative inline-flex w-2.5 h-2.5 rounded-full bg-orange-500 justify-center items-center">
+        <span className="relative inline-flex w-2.5 h-2.5 rounded-full bg-[#F97316] justify-center items-center">
           {showButton && (
-            <button className=" py-2 px-2 rounded-full bg-white text-orange-500 whitespace-nowrap font-semibold flex justify-center items-center text-center">
+            <button className=" py-2 px-2 rounded-full bg-[#F97316] text-white whitespace-nowrap font-semibold flex justify-center items-center text-center">
               <ArrowUpRight className="w-8 h-8" />
             </button>
           )}
@@ -108,7 +108,7 @@ const CustomCursor = () => {
         ref={imgRef}
         src={images[imgIndex]}
         alt="cursor"
-        className="cursor-img fixed pointer-events-none z-999 rounded max-sm:hidden "
+        className="cursor-img fixed pointer-events-none z-999 border border-slate-950/60 rounded max-sm:hidden "
       />
     </>
   );

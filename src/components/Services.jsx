@@ -24,7 +24,7 @@ const Services = () => {
 
               {/* Number */}
               <div className="mb-8 md:mb-12">
-                <span className="font-display text-6xl md:text-7xl font-light text-orange-300/50 transition-colors duration-300 ">
+                <span className="font-display text-6xl md:text-7xl font-light text-[#ff5f1f7a] transition-colors duration-300 ">
                   {service.id}
                 </span>
               </div>

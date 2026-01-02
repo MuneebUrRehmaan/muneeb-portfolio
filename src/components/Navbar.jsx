@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <div >
-            <nav className={`max-w-7xl  sm:fixed absolute top-0 left-0 right-0  z-100 transition-all duration-300 border-0 ${isScrolled ? 'sm:bg-[#fbf9f4] sm:py-2  sm:shadow-sm   sm:rounded  sm:mx-8  sm:mt-2 ' : 'bg-transparent py-8'}`}>
+            <nav className={`max-w-7xl  md:fixed absolute top-0 left-0 right-0  z-100 transition-all duration-300 border-0 ${isScrolled ? 'sm:bg-[#fbf9f4] sm:py-2  sm:shadow-sm   sm:rounded  sm:mx-8  sm:mt-2 ' : 'bg-transparent py-8'}`}>
                 <div className=" mx-auto px-4">
                     <div className="flex items-center h-full justify-between">
                         <div className="shrink-0">

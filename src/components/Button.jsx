@@ -18,7 +18,7 @@ const Button = (props) => {
 
 const StyledWrapper = styled.div`
   .cssbuttons-io-button {
-    background: #FB923C;
+    background: #F97316;
     color: white;
     font-family: inherit;
     padding: 0.35em;
