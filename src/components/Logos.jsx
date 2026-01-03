@@ -1,5 +1,6 @@
 import { logos } from '../constants';
-import { LayoutTemplate, Atom, Figma, Leaf, Hexagon, Box, Braces, Grid } from 'lucide-react';
+import { LayoutTemplate, Atom, Figma, Leaf, Hexagon, Box, Braces, Grid, Scroll } from 'lucide-react';
+import ScrollAnimation from './ScrollAnimation';
 
 const Logos = () => {
 
@@ -20,6 +21,7 @@ const Logos = () => {
 
   return (
     <section className="w-full bg-cream-dark py-12 border-y border-gray-200/60 overflow-hidden">
+      <ScrollAnimation direction="up" >
       <div
         className="relative w-full flex overflow-hidden mask-image-gradient"
         style={{
@@ -58,11 +60,8 @@ const Logos = () => {
             </div>
           ))}
         </div>
-
-
-
-
       </div>
+      </ScrollAnimation>
     </section>
   );
 };

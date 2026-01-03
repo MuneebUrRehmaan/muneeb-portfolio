@@ -1,7 +1,10 @@
+import { Scroll } from 'lucide-react';
 import styled from 'styled-components';
+import ScrollAnimation from './ScrollAnimation';
 
 const Button = (props) => {
   return (
+    <ScrollAnimation direction="up">
     <StyledWrapper>
       <div className="cssbuttons-io-button">
         {props.title}
@@ -13,6 +16,7 @@ const Button = (props) => {
         </div>
       </div>
     </StyledWrapper>
+    </ScrollAnimation>
   );
 }
 

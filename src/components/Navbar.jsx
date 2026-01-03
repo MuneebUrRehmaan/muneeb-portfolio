@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { herologo, menuprofile, nav_links } from '../constants';
 import { Link } from 'react-router-dom'
 import Button from './Button';
+import ScrollAnimation from './ScrollAnimation';
 
 const Navbar = () => {
 
@@ -25,14 +26,16 @@ const Navbar = () => {
                 <div className=" mx-auto px-4">
                     <div className="flex items-center h-full justify-between">
                         <div className="shrink-0">
+                            <ScrollAnimation direction="left">
                             <a
                                 href="/">
                                 <img src={herologo} loading='lazy' alt="" className='w-15' />
                             </a>
+                            </ScrollAnimation>
                         </div>
                         <div className=" hidden md:flex items-center  justify-center gap-8">
                             {nav_links.map((link, idx) => (
-                                <Link key={idx} onClick={() => { hash() }} className=" text-medium font-lg  text-slate-800 active:text-black hover:text-black transition-colors duration-200" to={link.href} >
+                                <Link key={idx} onClick={() => { hash() }}   className=" text-medium font-lg  hover:text-[#F97316] transition-colors duration-200 text-slate-900" to={link.href}  >
                                     {link.label}
                                 </Link>
                             ))}

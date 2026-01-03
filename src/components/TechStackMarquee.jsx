@@ -1,3 +1,4 @@
+import ScrollAnimation from "./ScrollAnimation";
 
 // Tech stack data with inline SVGs (same-to-same)
 const techStack = [
@@ -76,9 +77,10 @@ const techStack = [
 const TechStackMarquee = () => {
   return (
     <div className="w-full pt-16 pb-6 overflow-hidden relative">
-
+       <ScrollAnimation direction="up" delay={0.2}>
       <div className="flex w-max animate-scroll">
         {[1, 2, 3].map(loop => (
+         
           <div key={loop} className="flex items-center gap-6 px-3">
             {techStack.map((tech, index) => (
               <div
@@ -94,8 +96,10 @@ const TechStackMarquee = () => {
               </div>
             ))}
           </div>
+         
         ))}
       </div>
+       </ ScrollAnimation>
     </div>
   );
 };

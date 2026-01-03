@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import Title from './Title';
 import SubHaeading from './SubHaeading';
+import ScrollAnimation from './ScrollAnimation';
 
 const steps = [
   {
@@ -62,14 +63,17 @@ export const ProcessSection = () => {
   return (
 
     <section className="block  w-full py-20 px-4 md:px-8">
+      <ScrollAnimation direction="up" >
       <div className="mb-12">
         <SubHaeading subTitle={'Steps I Follow'} />
         <Title title={'My Process'} />
 
       </div>
+      </ScrollAnimation>
 
       <div className="flex flex-col gap-8 pb-8">
         {steps.map((step, index) => (
+          <ScrollAnimation key={index} direction="up" delay={0.1 * index} >
           <div
             key={index}
             className="relative p-8 bg-[#faf9f6] rounded border border-gray-100 shadow-sm overflow-hidden"
@@ -92,6 +96,7 @@ export const ProcessSection = () => {
                 {step.number}
               </span> */}
           </div>
+            </ ScrollAnimation>
         ))}
       </div>
     </section>

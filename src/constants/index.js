@@ -21,7 +21,7 @@ import ppi from '../assets/ppi.webp'
 import resume from '../assets/resume.pdf'
 import herologo from '../assets/herologo.webp'
 import menuprofile from '../assets/menu-profile.webp'
-import cursor from '../assets/cursor.webp'
+
 
 
 // Navigation Links

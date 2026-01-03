@@ -2,9 +2,11 @@ import { useRef, useState } from 'react';
 import { about, yo } from '../constants';
 import SubHaeading from './SubHaeading';
 import { Play } from "lucide-react"; // optional icon
+import ScrollAnimation from './ScrollAnimation';
+
 
 const About = () => {
-  
+
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -26,62 +28,71 @@ const About = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center relative z-10">
 
         {/* Left Side: Text */}
-        <div className="order-2 lg:order-2 flex flex-col gap-8">
+        <ScrollAnimation direction="up" >
+          <div className="order-2 lg:order-2 flex flex-col gap-8">
 
-          <div>
-            <SubHaeading subTitle={'My Journey'} />
+            <div>
+              <SubHaeading subTitle={'My Journey'} />
 
-            <h2 className="font-display text-6xl max-md:text-4xl font-bold text-black uppercase leading-none tracking-tight">
-              {about.title}
-            </h2>
+              <h2 className="font-display text-6xl max-md:text-4xl font-bold text-black uppercase leading-none tracking-tight">
+                {about.title}
+              </h2>
+            </div>
+
+            <p className="text-gray-700  text-lg leading-relaxed  max-w-xl">
+              {about.description}
+            </p>
+
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-gray-200">
+              {about.stats.map((stat, index) => (
+                <ScrollAnimation key={index} direction="left" delay={0.2 * index} >
+                <div key={index} className="flex flex-col">
+                  <span className="font-display text-4xl md:text-3xl font-bold text-black mb-1">
+                    {stat.value}
+                  </span>
+                  <span className="text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">
+                    {stat.label}
+                  </span>
+                </div>
+                </ScrollAnimation>
+              ))}
+            </div>
+
           </div>
-
-          <p className="text-gray-700  text-lg leading-relaxed  max-w-xl">
-            {about.description}
-          </p>
-
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 pt-6 border-t border-gray-200">
-            {about.stats.map((stat, index) => (
-              <div key={index} className="flex flex-col">
-                <span className="font-display text-4xl md:text-3xl font-bold text-black mb-1">
-                  {stat.value}
-                </span>
-                <span className="text-xs md:text-sm font-medium text-gray-500 uppercase tracking-wider">
-                  {stat.label}
-                </span>
-              </div>
-            ))}
-          </div>
-
-        </div>
+        </ScrollAnimation>
 
         {/* Right Side: Video */}
+
         <div className="order-1 lg:order-2 relative">
-          <div className="relative rounded overflow-hidden shadow-2xl w-auto h-105 max-sm:h-60   group">
+          <ScrollAnimation direction="right" >
+            <div className="relative rounded overflow-hidden shadow-2xl w-auto h-105 max-sm:h-60   group">
 
-            <video
-              
-              ref={videoRef}
-              className=" w-full h-full object-cover "
+              <video
 
-            >
-              <source src={yo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+                ref={videoRef}
+                className=" w-full h-full object-cover "
 
-            {!isPlaying && (
-        <button
-          onClick={handlePlay}
-          className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-lg "
-        >
-          <div className="bg-[#F97316] p-4 rounded-full cursor-pointer hover:bg-[#F97316]/90 transition-all">
-            <Play size={32} className="text-white" />
-          </div>
-        </button>
-      )}
+              >
+                <source src={yo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
 
-          </div>
+
+              {!isPlaying && (
+                <button
+                  onClick={handlePlay}
+                  className="absolute inset-0 flex items-center justify-center bg-black/30 rounded-lg "
+                >
+                  <div className="bg-[#F97316] p-4 rounded-full cursor-pointer hover:bg-[#F97316]/90 transition-all">
+                    <Play size={32} className="text-white" />
+                  </div>
+                </button>
+              )}
+
+            </div>
+            </ScrollAnimation>
         </div>
 
       </div>

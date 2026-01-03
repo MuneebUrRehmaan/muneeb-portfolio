@@ -1,6 +1,7 @@
 import { ArrowUpRight, Heart } from 'lucide-react';
 import { contact, herologo, nav_links, social } from '../constants';
 import { Link } from 'react-router-dom'
+import ScrollAnimation from './ScrollAnimation';
 
 const Footer = () => {
 
@@ -17,13 +18,17 @@ const Footer = () => {
           <span className="text-orange-500 font-medium tracking-[0.2em] uppercase mb-6 text-sm md:text-base animate-pulse">
             What's Next?
           </span>
+          <ScrollAnimation  direction="up" delay={0.1}>
           <h2 className="text-white font-display text-6xl  font-bold uppercase tracking-normal mb-10 leading-[0.9]">
             Let's Work Together
           </h2>
+          </ScrollAnimation>
+          <ScrollAnimation direction="up" delay={0.2}>
           <a
             href={`mailto:${contact.email}`}
             className="group relative inline-flex items-center gap-3 text-2xl md:text-4xl font-serif italic hover:text-orange-200 transition-colors duration-300"
           >
+          
             <span className="text-white border-b border-white/30 group-hover:border-orange-200 group-hover:text-orange-200 pb-1 transition-colors duration-300 ">
               {contact.email}
             </span>
@@ -31,6 +36,7 @@ const Footer = () => {
               <ArrowUpRight className="w-6 h-6 md:w-8 md:h-8 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
             </span>
           </a>
+          </ScrollAnimation>
         </div>
 
         {/* Divider */}
@@ -58,13 +64,13 @@ const Footer = () => {
             <ul className="space-y-4">
               {nav_links.map(link => (
                 <li key={link.label}>
-                  <Link to={link.href} onClick={() => { hash() }} className="text-gray-400 hover:text-white transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
+                  <Link to={link.href} onClick={() => { hash() }} className="text-gray-400 hover:text-[#F97316] transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
                     {link.label}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link to='muneeb-portfolio/contact' onClick={() => { hash() }} className="text-gray-400 hover:text-white transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
+                <Link to='muneeb-portfolio/contact' onClick={() => { hash() }} className="text-gray-400 hover:text-[#F97316] transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
                   Contact</Link>
               </li>
             </ul>

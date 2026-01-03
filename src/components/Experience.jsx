@@ -1,6 +1,7 @@
 import { experience } from '../constants';
 import Title from './Title';
 import SubHaeading from './SubHaeading';
+import ScrollAnimation from './ScrollAnimation';
 
 const Experience = () => {
 
@@ -19,11 +20,13 @@ const Experience = () => {
           onMouseEnter={() => window.dispatchEvent(new Event("cursor-hover-images"))}
           onMouseLeave={() => window.dispatchEvent(new Event("cursor-hover-leave"))}
         >
-          {experience.map((item, index) => (
+          {experience.map((item, index) => ( 
+               <ScrollAnimation direction="left" delay={0.1 * index} >
             <div
               key={index}
               className="group flex flex-col md:flex-row items-start md:items-center py-3 md:py-8 border-b border-gray-200 hover:border-gray-400 transition-colors duration-300"
             >
+           
 
               {/* Period */}
               <div className="w-full md:w-1/5 mb-4 md:mb-0">
@@ -53,8 +56,9 @@ const Experience = () => {
                   ))}
                 </div>
               </div>
-
+            
             </div>
+            </ScrollAnimation>
           ))}
         </div>
 

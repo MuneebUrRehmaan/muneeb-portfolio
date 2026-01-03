@@ -108,7 +108,7 @@ const CustomCursor = () => {
         ref={imgRef}
         src={images[imgIndex]}
         alt="cursor"
-        className="cursor-img fixed pointer-events-none z-999 border border-slate-950/60 rounded max-sm:hidden "
+        className="cursor-img fixed pointer-events-none z-999  shadow-md rounded max-sm:hidden "
       />
     </>
   );

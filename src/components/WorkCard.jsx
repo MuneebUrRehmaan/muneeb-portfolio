@@ -2,6 +2,7 @@ import Button from './Button'
 
 const WorkCard = (project) => {
     return (
+         
         <div
             className=" recent-work-item group relative overflow-hidden rounded  bg-gray-100 shadow-sm border border-gray-200"
             key={project.id}
@@ -40,7 +41,9 @@ const WorkCard = (project) => {
                         <Button title={'Live Link'} className={'text-gray-50 bg-[#1b1b1b]'} /></a>
                 </div>
             </div>
+           
         </div>
+      
     )
 }
 

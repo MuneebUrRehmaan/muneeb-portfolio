@@ -1,10 +1,11 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import {  Mail, Github, Linkedin, Instagram, Facebook } from 'lucide-react';
+import {  Mail, Github, Linkedin, Instagram, Facebook, Scroll } from 'lucide-react';
 import {contact, menuprofile } from '../constants';
 import Button from './Button';
 import SubHaeading from "./SubHaeading";
 import Title from "./Title";
+import ScrollAnimation from "./ScrollAnimation";
 
 const Talk = () => {
 
@@ -44,6 +45,7 @@ const Talk = () => {
 
                     {/* Left Side - Form */}
                     <div className="lg:col-span-2">
+                        <ScrollAnimation direction="up" delay={0.2} >
                         <form ref={form} onSubmit={sendEmail} className="space-y-4">
                             <div className="space-y-2">
                                 <label htmlFor="name" className="text-base font-medium text-gray-900 block ">Full Name</label>
@@ -84,10 +86,13 @@ const Talk = () => {
 
                             </div>
                         </form>
+                        </ ScrollAnimation>
                     </div>
 
                     {/* Right Side */}
+
                     <div className="lg:col-span-1">
+                        <ScrollAnimation direction="right" delay={0.3} >
                         <div className="bg-white rounded p-8 shadow-sm border border-[#f8f7f3] h-full flex flex-col">
 
                             {/* Availability */}
@@ -100,6 +105,7 @@ const Talk = () => {
                             </div>
 
                             {/* Avatar */}
+                            
                             <div className="w-24 h-24 rounded-full overflow-hidden mb-8 border-2 border-[#fbf9f4] shadow-sm ">
                                 <img
                                     src={menuprofile}
@@ -122,8 +128,9 @@ const Talk = () => {
                                 <a target="_blank" href="https://www.facebook.com/share/1BF3Nfzcxu/" className="text-gray-400 hover:text-black transition-all duration-300 hover:scale-110 transform"><Facebook size={24} strokeWidth={1.5} /></a>
                                 <a target="_blank" href={`mailto:${contact.email}`} className="text-gray-400 hover:text-black transition-all duration-300 hover:scale-110 transform"><Mail size={24} strokeWidth={1.5} /></a>
                             </div>
-
+                
                         </div>
+                        </ ScrollAnimation>
                     </div>
 
                 </div>
