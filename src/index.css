@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
 @import "tailwindcss";
-
 
 @layer components {
   .component-gap {
     @apply w-full pt-16 max-sm:pt-12 pb-10  px-4 md:px-8
   }
+}
+
+@theme {
+  --font-roboto: "Felipa", sans-serif; 
 }
 
 html{

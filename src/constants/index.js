@@ -64,11 +64,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Aurelia",
-    category: "Hotel Managment",
-    image: pj2,
-    link: "https://muneeburrehmaan.github.io/Aurelia/",
-    code: 'https://github.com/muneeburrehmaan/Aurelia'
+    title: "Bronze & Purple",
+    category: "Animated Website",
+    image: pj8,
+    link: "https://muneeburrehmaan.github.io/bronze",
+    code: 'https://github.com/muneeburrehmaan/bronze'
   },
   {
     id: 3,
@@ -85,14 +85,15 @@ export const projects = [
     image: pj4,
     link: "https://muneeburrehmaan.github.io/quizflow/",
   },
+
   {
     id: 5,
-    title: "Gallery",
-    category: "Gallery project",
-    image: pj5,
-    link: "https://muneeburrehmaan.github.io/gallery-project/",
-    code: 'https://github.com/muneeburrehmaan/gallery-project'
+    title: "Aurelia",
+    category: "Hotel Management ",
+    image:pj2,
+    link: "https://muneeburrehmaan.github.io/Aurelia/"
   },
+  
  
   {
     id: 6,
@@ -101,20 +102,25 @@ export const projects = [
     image: pj6,
     link: "https://muneeburrehmaan.github.io/Nikey-Shoes-Web/"
   },
+
+
   {
     id: 7,
+    title: "Gallery",
+    category: "Gallery project",
+    image: pj5,
+    link: "https://muneeburrehmaan.github.io/gallery-project/",
+    code: 'https://github.com/muneeburrehmaan/gallery-project'
+  },
+
+  {
+    id: 8,
     title: "Image Gallery",
     category: "Gallery",
     image: pj7,
     link: "https://muneeburrehmaan.github.io/Gaallery/"
-  },
-  {
-    id: 8,
-    title: "Lead Wave ",
-    category: "Agency website",
-    image:pj8,
-    link: "https://muneeburrehmaan.github.io/Lead-Wave-/"
   }
+  
 ];
 
 // About Section

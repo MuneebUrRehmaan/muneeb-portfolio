@@ -46,15 +46,15 @@ const Hero = () => {
 
                     <div  className="relative z-20 ">
                         
-                        <div className="flex flex-col leading-none select-none max-sm:ml-2">
+                        <div className="flex flex-col leading-none select-none max-sm:ml-2 gap-2">
                             <ScrollAnimation direction="left" delay={0.2}>
-                            <span className="font-display font-bold text-8xl max-sm:text-5xl  drop-shadow-xs  max-md:drop-shadow-gray-300  text-black   uppercase tracking-tighter transform md:translate-y-4">
+                            <span className="font-display font-semibold text-[80px] max-sm:text-5xl  drop-shadow-xs  max-md:drop-shadow-gray-300  text-black  uppercase tracking-tighter transform md:translate-y-4">
                                 I AM
                             </span>
                             </ScrollAnimation>
                             <ScrollAnimation direction="left" delay={0.5}>
-                            <span className="font-display font-bold text-8xl max-sm:text-5xl drop-shadow-xs  max-md:drop-shadow-gray-300    text-black  uppercase tracking-tighter">
-                                Muneeb
+                            <span className="font-roboto font-bold italic  text-[80px] max-sm:text-5xl drop-shadow-xs  max-md:drop-shadow-gray-300    text-black  ">
+                                MUNEEB
                             </span>
                             </ScrollAnimation>
                         </div>
