@@ -64,12 +64,12 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Bronze & Purple",
-    category: "Animated Website",
-    image: pj8,
-    link: "https://muneeburrehmaan.github.io/bronze",
-    code: 'https://github.com/muneeburrehmaan/bronze'
+    title: "Lumiere Restaurent",
+    category: "Restaurent Website",
+    image: pj7,
+    link: "https://muneeburrehmaan.github.io/lumiere/"
   },
+ 
   {
     id: 3,
     title: "Weather Website",
@@ -113,13 +113,16 @@ export const projects = [
     code: 'https://github.com/muneeburrehmaan/gallery-project'
   },
 
-  {
+   {
     id: 8,
-    title: "Image Gallery",
-    category: "Gallery",
-    image: pj7,
-    link: "https://muneeburrehmaan.github.io/Gaallery/"
+    title: "Bronze & Purple",
+    category: "Animated Website",
+    image: pj8,
+    link: "https://muneeburrehmaan.github.io/bronze",
+    code: 'https://github.com/muneeburrehmaan/bronze'
   }
+
+  
   
 ];
 
