@@ -41,11 +41,11 @@ const CustomCursor = () => {
       setShowButton(false);
 
       gsap.to(dot, { opacity: 0, scale: 0.3, duration: 0.2 });
-      gsap.to(img, { opacity: 1, scale: 1, duration: 0 });
+      gsap.to(img, { opacity: 1, scale: 1, duration: 0.5 });
 
       intervalRef.current = setInterval(() => {
         setImgIndex((prev) => (prev + 1) % images.length);
-      }, 600);
+      }, 900);
     };
 
     // hover button

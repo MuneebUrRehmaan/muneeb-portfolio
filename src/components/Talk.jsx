@@ -54,7 +54,7 @@ const Talk = () => {
                                     id="name"
                                     name="name"
                                     placeholder="John Doe"
-                                    className="w-full h-14 px-6 rounded border shadow-sm border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
+                                    className="w-full h-14 px-6 rounded-xl border shadow-sm border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
                                     required />
                             </div>
 
@@ -65,7 +65,7 @@ const Talk = () => {
                                     id="email"
                                     name="email"
                                     placeholder="john@example.com"
-                                    className="w-full h-14 px-6 rounded shadow-sm border border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
+                                    className="w-full h-14 px-6 rounded-xl shadow-sm border border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
                                     required />
                             </div>
 
@@ -75,7 +75,7 @@ const Talk = () => {
                                     id="message"
                                     name="message"
                                     placeholder="Tell me about your project..."
-                                    className="w-full h-48 p-6 rounded border shadow-sm border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900 resize-none  hover:border-gray-300"
+                                    className="w-full h-48 p-6 rounded-xl border shadow-sm border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900 resize-none  hover:border-gray-300"
                                     required />
                             </div>
 
@@ -93,7 +93,7 @@ const Talk = () => {
 
                     <div className="lg:col-span-1">
                         <ScrollAnimation direction="right" delay={0.3} >
-                        <div className="bg-white rounded p-8 shadow-sm border border-[#f8f7f3] h-full flex flex-col">
+                        <div className="bg-white rounded-xl p-8 shadow-sm border border-[#f8f7f3] h-full flex flex-col">
 
                             {/* Availability */}
                             <div className="inline-flex items-center gap-3 bg-orange-50 px-4 py-2 rounded-full mb-10 w-fit self-start border border-gray-200">

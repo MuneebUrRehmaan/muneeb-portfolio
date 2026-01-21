@@ -5,7 +5,7 @@ import ScrollAnimation from "./ScrollAnimation.jsx";
 const Hero = () => {
     
     return (
-        <section id='home' className=" relative sm:min-h-screen h-[90vh] w-full overflow-hidden flex flex-col justify-end pt-20 pb-10 md:pb-0">
+        <section id='home' className=" relative sm:min-h-screen h-[94vh] w-full overflow-hidden flex flex-col justify-end pt-20 pb-10 md:pb-0">
             <img src={bghero} alt="" className='absolute top-0 w-screen h-screen z-0' />
             {/* Main Content Container */}
             <div className="max-w-7xl relative z-10  mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:block h-full grow">
@@ -30,12 +30,12 @@ const Hero = () => {
 
                 {/* Main info */}
                 <div className=" flex flex-col gap-4  z-20 absolute max-md:relative max-sm:mt-5 bottom-6">
-                    <div className="w-fit flex  items-center gap-3 max-sm:gap-0  backdrop-blur-sm pl-2 pr-5 mt-4 rounded-full shadow-sm border border-white/50">
+                    <div className="w-fit flex  items-center gap-1 max-sm:gap-0  backdrop-blur-sm pl-2 pr-5 mt-4 rounded-full shadow-sm border border-white/50">
                         <span className="relative flex h-8 w-8 items-center justify-center rounded-full ">
                             <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#FF5F1F] opacity-80"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF5F1F]"></span>
                         </span>
-                        <span className="text-xs  max-sm:hidden font-semibold tracking text-gray-800 uppercase">
+                        <span className="text-xs  max-sm:hidden font-semibold tracking text-gray-800 ">
                             {hero.availability}
                         </span>
                         <span className="text-xs hidden max-sm:flex font-semibold tracking text-gray-800">

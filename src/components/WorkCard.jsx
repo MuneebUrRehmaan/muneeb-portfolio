@@ -4,7 +4,7 @@ const WorkCard = (project) => {
     return (
          
         <div
-            className=" recent-work-item group relative overflow-hidden rounded  bg-gray-100 shadow-sm border border-gray-200"
+            className=" recent-work-item group relative overflow-hidden rounded-xl  bg-gray-100 shadow-sm border border-gray-200"
             key={project.id}
         >
 

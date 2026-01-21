@@ -35,7 +35,7 @@ export const nav_links = [
 // Hero Section Data
 export const hero = {
   name: 'MUneeb.',
-  availability: 'Available for new opportunities',
+  availability: 'NEED A WEBSITE?',
   description: 'Specialized in Mern Stack, UX/UI, API Integration, and Backend Development.',
 };
 

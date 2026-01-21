@@ -8,9 +8,12 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import CustomCursor from './components/CustomCursor'
 import MobileBottomNav from './components/MobileBottomNav'
+import { useEffect } from 'react'
 
 const App = () => {
-
+   useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  }, []);
   return (
     <div className='relative'>
       <div className='max-sm:hidden'><CustomCursor /></div>

@@ -50,11 +50,11 @@ const AboutHero = () => {
               cursorCharacter=""
             /></span>
           <br className="" />
-          &amp; Digital Designer
+          &amp; Web Designer
         </h1>
         </ ScrollAnimation>
        <ScrollAnimation direction="up" delay={0.3} >
-        <p className="text-md md:text-xl text-gray-600 leading-relaxed max-w-lg">
+        <p className="text-md md:text-xl text-slate-800 leading-relaxed max-w-lg">
           I collaborate with brands globally to design impactful, mission-focused websites
           that drive results and achieve business goals.
         </p>
