@@ -9,7 +9,7 @@ const Logos = () => {
     switch (name.toLowerCase()) {
       case 'figma': return <Figma size={28} />;
       case 'react': return <Atom size={28} />;
-      case 'webflow': return <LayoutTemplate size={28} />;
+      case 'wordpress': return <LayoutTemplate size={28} />;
       case 'mongo db': return <Leaf size={28} />;
       case 'node js': return <Braces size={28} />;
       case 'next js': return <Box size={28} />;

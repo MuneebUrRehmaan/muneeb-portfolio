@@ -55,8 +55,7 @@ const AboutHero = () => {
         </ ScrollAnimation>
        <ScrollAnimation direction="up" delay={0.3} >
         <p className="text-md md:text-xl text-slate-800 leading-relaxed max-w-lg">
-          I collaborate with brands globally to design impactful, mission-focused websites
-          that drive results and achieve business goals.
+          I design and build modern, responsive web experiences that turn ideas into fast, functional, and visually stunning digital products worldwide.
         </p>
         </ ScrollAnimation>
         {/* Resume Button */}

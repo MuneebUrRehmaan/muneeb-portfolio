@@ -26,9 +26,9 @@ import menuprofile from '../assets/menu-profile.webp'
 
 // Navigation Links
 export const nav_links = [
-  { label: 'Home', href: 'muneeb-portfolio/' },
-  { label: 'Work', href: 'muneeb-portfolio/projects' },
-  { label: 'About', href: 'muneeb-portfolio/about' },
+  { label: 'Home', href: '/muneeb-portfolio' },
+  { label: 'Work', href: '/projects' },
+  { label: 'About', href: '/about' },
   
 ];
 
@@ -46,7 +46,7 @@ export const logos = [
   { name: "Next js", icon: "next" },
   { name: "Mongo db", icon: "mango" },
   { name: "Node js", icon: "node" },
-  { name: "Webflow", icon: "webflow" },
+  { name: "Wordpress", icon: "wordpress" },
   { name: "Firebase", icon: "firebase" },
   { name: "Stripe", icon: "Stripe" }
 ];

@@ -70,7 +70,7 @@ const Footer = () => {
                 </li>
               ))}
               <li>
-                <Link to='muneeb-portfolio/contact' onClick={() => { hash() }} className="text-gray-400 hover:text-[#F97316] transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
+                <Link to='/contact' onClick={() => { hash() }} className="text-gray-400 hover:text-[#F97316] transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
                   Contact</Link>
               </li>
             </ul>

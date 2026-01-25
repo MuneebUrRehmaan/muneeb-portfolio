@@ -19,6 +19,10 @@ html{
       background-color: #fffdf5;
        overflow-x: hidden;
     }
+    
+    .active{
+      color: #F97316;
+    }
 
     /* Custom utility for text stroke if needed, though pure tailwind is preferred */
     .text-outline-white {

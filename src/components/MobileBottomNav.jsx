@@ -11,10 +11,10 @@ const MobileBottomNav = () => {
   }
 
   const navItems = [
-    { name: 'Home', icon: Home, href: 'muneeb-portfolio/' },
-    { name: 'Projects', icon: BriefcaseBusiness, href: 'muneeb-portfolio/projects' },
-    { name: 'About', icon: User, href: 'muneeb-portfolio/about' },
-    { name: 'Contact', icon: Phone, href: 'muneeb-portfolio/contact' },
+    { name: 'Home', icon: Home, href: '/muneeb-portfolio' },
+    { name: 'Projects', icon: BriefcaseBusiness, href: '/projects' },
+    { name: 'About', icon: User, href: '/about' },
+    { name: 'Contact', icon: Phone, href: '/contact' },
   ];
 
   return (

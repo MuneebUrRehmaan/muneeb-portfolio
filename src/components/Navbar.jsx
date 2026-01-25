@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { herologo, menuprofile, nav_links } from '../constants';
-import { Link } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 import Button from './Button';
 import ScrollAnimation from './ScrollAnimation';
 
@@ -35,23 +35,22 @@ const Navbar = () => {
                         </div>
                         <div className=" hidden md:flex items-center  justify-center gap-8">
                             {nav_links.map((link, idx) => (
-                                <Link key={idx} onClick={() => { hash() }}   className=" text-medium font-lg  hover:text-[#F97316] transition-colors duration-200 text-slate-900" to={link.href}  >
+                                <NavLink key={idx} onClick={() => { hash() }}   className=" text-medium font-lg  hover:text-[#F97316] transition-colors duration-200 text-slate-900" to={link.href}  >
                                     {link.label}
-                                </Link>
+                                </NavLink>
                             ))}
                         </div>
                         {/* CTA Button */}
                         <div className="hidden md:block">
-                            <Link
+                            <NavLink
                                 onClick={() => { hash() }}
-                                to='muneeb-portfolio/contact'
+                                to='/contact'
                             >
                                 <Button title={'Contact'} className={'text-gray-50 bg-[#212121]'} />
-                            </Link>
+                            </NavLink>
                         </div>
                         {/* Mobile Menu Button */}
                         <div className="relative md:hidden">
-
                             <img src={menuprofile} loading='lazy' alt="" className=' w-14 h-14 rounded-full border border-[#f3eede] object-cover' />
                         </div>
                     </div>
