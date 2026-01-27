@@ -18,7 +18,7 @@ const Hero = () => {
                             
                             src={profile2}
                             loading='lazy'
-                            alt="Portrait of Madison"
+                            alt="Portrait of Muneeb"
                             className="w-full max-md:ml-20 max-sm:ml-30 lg:h-screen max-md:h-screen h-full  object-cover  object-top md:object-contain "
 
                         />

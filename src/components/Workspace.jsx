@@ -6,7 +6,7 @@ import ScrollAnimation from './ScrollAnimation';
 
 const Workspace = () => {
   return (
-    <section className="w-full bg-cream pt-24 pb-34 overflow-hidden">
+    <section className="max-w-7xl mx-auto bg-cream pt-24 pb-34 overflow-hidden">
       
 
       <div className=' px-4 md:px-8'>

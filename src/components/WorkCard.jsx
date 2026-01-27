@@ -25,7 +25,7 @@ const WorkCard = (project) => {
             </div>
 
             {/* Overlay */}
-            <div className="flex flex-col justify-end p-4 md:p-6 bg-[#fbf9f4] ">
+            <div className="flex flex-col justify-end p-4 md:p-6 bg-[#F7FBFC] ">
 
                 {/* Slide Up Content */}
                 <div><p  className='text-sm max-sm:text-xs  text-orange-400 font-semibold -mb-1.5'>{project.category}</p></div>
