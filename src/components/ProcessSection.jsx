@@ -76,7 +76,7 @@ export const ProcessSection = () => {
           <ScrollAnimation key={index} direction="up" delay={0.1 * index} >
           <div
             key={index}
-            className="relative p-8 bg-[#faf9f6] rounded-xl border border-gray-100 shadow-sm overflow-hidden"
+            className="relative p-8 bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden"
           >
             <div className="flex flex-col gap-6 relative z-10">
               <div

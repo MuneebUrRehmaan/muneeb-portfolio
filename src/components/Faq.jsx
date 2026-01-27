@@ -26,7 +26,7 @@ const FAQ = () => {
           {faq_data.map((item, index) => (
             <div
               key={index}
-              className={`bg-[#faf9f6] rounded-xl transition-all duration-300 overflow-hidden border-gray-200 ${openIndex === index
+              className={`bg-white rounded-xl transition-all duration-300 overflow-hidden border-gray-200 ${openIndex === index
                   ? 'shadow-sm border-gray-200'
                   : 'border-gray-200 border hover:border-gray-200'
                 }`}
