@@ -47,7 +47,7 @@ const RecentProjects = () => {
                     <hr className='w-12 hidden max-sm:block h-1 bg-orange-400/80 rounded-bl-2xl rounded-tl-2xl border-none' />
                     <Link
                         onClick={() => { hash() }}
-                        to="projects#works"
+                        to="/projects"
 
                     >
                         <Button title={"VIEW ALL PROJECTS"} className={'pt-4 pb-4 pl-8 pr-8 text-gray-50 bg-[#1b1b1b]'} />

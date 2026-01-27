@@ -71,7 +71,7 @@ export const ProcessSection = () => {
       </div>
       </ScrollAnimation>
 
-      <div className="flex flex-col gap-8 pb-8">
+      <div className="grid md:grid-cols-2 gap-8 pb-8">
         {steps.map((step, index) => (
           <ScrollAnimation key={index} direction="up" delay={0.1 * index} >
           <div

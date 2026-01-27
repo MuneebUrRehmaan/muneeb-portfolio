@@ -35,7 +35,7 @@ const Logos = () => {
           {logos.map((brand, index) => (
             <div
               key={`brand-1-${index}`}
-              className="flex items-center gap-3 text-slate-700 hover:text-black transition-colors duration-300 cursor-default group"
+              className="flex items-center gap-3 text-slate-900 hover:text-black transition-colors duration-300 cursor-default group"
             >
               <span className="group-hover:scale-110 transition-transform duration-300">
                 {getIcon(brand.name)}
@@ -49,7 +49,7 @@ const Logos = () => {
           {logos.map((brand, index) => (
             <div
               key={`brand-1-${index}`}
-              className="flex items-center gap-3 text-slate-700 hover:text-black transition-colors duration-300 cursor-default group"
+              className="flex items-center gap-3 text-slate-900 hover:text-black transition-colors duration-300 cursor-default group"
             >
               <span className="group-hover:scale-110 transition-transform duration-300">
                 {getIcon(brand.name)}

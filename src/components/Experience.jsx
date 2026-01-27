@@ -37,7 +37,7 @@ const Experience = () => {
 
               {/* Role */}
               <div className="w-full md:w-2/5 mb-2">
-                <h3 className="font-display text-3xl max-md:text-2xl font-semibold text-black sm:uppercase tracking-wide">
+                <h3 style={{fontFamily: 'Playfair Display'}} className=" text-3xl max-md:text-2xl font-semibold text-black tracking-tight">
                   {item.role}
                 </h3>
               </div>

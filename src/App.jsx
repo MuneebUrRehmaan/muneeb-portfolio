@@ -18,9 +18,9 @@ const App = () => {
     <div className='relative'>
       <div className='max-sm:hidden'><CustomCursor /></div>
       
-      <Navbar />
+     <div className='max-sm:hidden'> <Navbar />  </div>
       <MobileBottomNav />
-      <div className="bg-[#f9f6ed] min-h-screen w-full text-gray-900 antialiased font-sans selection:bg-orange-200 selection:text-orange-900">
+      <div className="min-h-screen w-full text-gray-900 font-sans selection:bg-orange-200 selection:text-orange-900">
         <Routes>
           <Route path='/muneeb-portfolio' element={<Homepage />} />
           <Route path='/projects' element={<Projects />} />

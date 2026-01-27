@@ -35,7 +35,7 @@ const Services = () => {
 
                 {/* Title */}
                 <div className="mb-4 md:mb-6">
-                  <h3 className="font-display text-3xl max-md:text-2xl font-bold uppercase tracking-wide text-black">
+                  <h3 style={{fontFamily: 'Playfair Display'}} className=" text-3xl max-md:text-2xl font-bold tracking-normal  text-black">
                     {service.title}
                   </h3>
                 </div>

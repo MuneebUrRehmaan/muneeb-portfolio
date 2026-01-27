@@ -56,10 +56,10 @@ export const logos = [
 export const projects = [
   {
     id: 1,
-    title: "Novashop",
+    title: "Forever",
     category: "E-Commerce",
     image: pj1,
-    link: "https://muneeburrehmaan.github.io/NovaShop.co/",
+    link: "https://forever-frontend-coral.vercel.app/",
     code: 'https://github.com/muneeburrehmaan/NovaShop.co'
   },
   {
@@ -163,7 +163,7 @@ export const experience = [
 export const service = [
   {
     id: "01",
-    title: "Website Development",
+    title: "Wordpress Development",
     description:
       "I build responsive, fast, and modern websites using HTML, CSS, JavaScript, and React, delivering pixel-perfect and user-friendly designs."
   },

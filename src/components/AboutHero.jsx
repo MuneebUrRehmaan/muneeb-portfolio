@@ -8,14 +8,14 @@ import ScrollAnimation from './ScrollAnimation';
 
 const AboutHero = () => {
   return (
-    <section className="md:px-8 px-4 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+    <section className="md:px-8 px-4 flex flex-col lg:flex-row items-center gap-2 lg:gap-16 mt-2">
 
       {/* Left Column: Image Container */}
-      <div className="relative lg:w-1/3 max-w-[500px] lg:max-w-none max-sm:hidden">
+      <div className="relative lg:w-1/3 max-w-[500px] lg:max-w-none">
 
         {/* Image Mask Wrapper */}
      <ScrollAnimation direction="up" >
-        <div className="relative z-0 w-full h-120 overflow-hidden rounded rounded-b-[170px] shadow-sm">
+        <div className="relative z-0 w-full md:h-120 h-110 overflow-hidden rounded rounded-b-[170px] shadow-sm">
           
           <img
             loading='lazy'
@@ -30,7 +30,7 @@ const AboutHero = () => {
           </ ScrollAnimation>
 
         {/* Floating Badge */}
-        <div className="absolute  right-3 bottom-4  z-10">
+        <div className="max-sm:hidden absolute  right-3 bottom-4  z-10">
           <ScrollAnimation direction="left" delay={0.2} >
           <CircularTextBadge text="LETS TALK" />
           </ ScrollAnimation>

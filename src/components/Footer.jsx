@@ -24,12 +24,12 @@ const Footer = () => {
           </h2>
           </ScrollAnimation>
           <ScrollAnimation direction="up" delay={0.2}>
-          <a
+          <a 
             href={`mailto:${contact.email}`}
             className="group relative inline-flex items-center gap-3 text-2xl md:text-4xl font-serif italic hover:text-orange-200 transition-colors duration-300"
           >
           
-            <span className="text-white border-b border-white/30 group-hover:border-orange-200 group-hover:text-orange-200 pb-1 transition-colors duration-300 ">
+            <span style={{fontFamily: 'Playfair Display'}} className="text-white border-b border-white/30 group-hover:border-orange-200 group-hover:text-orange-200 pb-1 transition-colors duration-300 ">
               {contact.email}
             </span>
             <span className="text-white group-hover:text-orange-200">
@@ -52,7 +52,7 @@ const Footer = () => {
                 <img src={herologo} loading='lazy' alt="" className='w-40' />
               </a>
             </div>
-            <p className="text-gray-500 text-sm leading-relaxed">
+            <p className="text-gray-200 text-sm leading-relaxed">
               &copy; {new Date().getFullYear()} Muneeb's Portfolio. All rights reserved. <br />
               Contact: 0305-3010428
             </p>
@@ -64,13 +64,13 @@ const Footer = () => {
             <ul className="space-y-4">
               {nav_links.map(link => (
                 <li key={link.label}>
-                  <Link to={link.href} onClick={() => { hash() }} className="text-gray-400 hover:text-[#F97316] transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
+                  <Link to={link.href} onClick={() => { hash() }} className="text-gray-300 hover:text-[#F97316] transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
                     {link.label}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link to='/contact' onClick={() => { hash() }} className="text-gray-400 hover:text-[#F97316] transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
+                <Link to='/contact' onClick={() => { hash() }} className="text-gray-300 hover:text-[#F97316] transition duration-200  text-base font-medium inline-block hover:translate-x-1 transform">
                   Contact</Link>
               </li>
             </ul>
@@ -82,13 +82,13 @@ const Footer = () => {
             <ul className="grid  grid-cols-2  sm:gap-x-4 gap-y-4 w-full">
               {social.map(link => (
                 <li key={link.label}>
-                  <Link to={link.href} target='_blank' className="text-gray-400 hover:text-orange-200 transition-colors duration-200 text-base font-medium flex items-center gap-2 group">
+                  <Link to={link.href} target='_blank' className="text-gray-300 hover:text-orange-200 transition-colors duration-200 text-base font-medium flex items-center gap-2 group">
                     {link.label}
                     <ArrowUpRight size={16} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
                   </Link>
                 </li>
               ))}
-              <li title='0305-3010428' className=" cursor-pointer text-gray-400 hover:text-orange-200 transition-colors duration-200 text-base font-medium flex items-center gap-2 group">
+              <li title='0305-3010428' className=" cursor-pointer text-gray-300 hover:text-orange-200 transition-colors duration-200 text-base font-medium flex items-center gap-2 group">
                 Contact<span className="sm:opacity-0 opacity-100 group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100 transition-all whitespace-nowrap" >: 0305-3010428</span>
               </li>
             </ul>

@@ -48,14 +48,16 @@ const Hero = () => {
                         
                         <div className="flex flex-col leading-none select-none max-sm:ml-2 gap-2">
                             <ScrollAnimation direction="left" delay={0.2}>
-                            <span className="font-display font-semibold text-[80px] max-sm:text-5xl  drop-shadow-xs  max-md:drop-shadow-gray-300  text-black  uppercase tracking-tighter transform md:translate-y-4">
-                                I AM
+                            <span className="font-display font-semibold text-[80px] max-sm:text-5xl  drop-shadow-xs  max-md:drop-shadow-gray-300  text-slate-950   tracking-tighter transform md:translate-y-4">
+                                I am
                             </span>
                             </ScrollAnimation>
                             <ScrollAnimation direction="left" delay={0.5}>
-                            <span className="font-roboto font-bold italic  text-[80px] max-sm:text-5xl drop-shadow-xs  max-md:drop-shadow-gray-300    text-black  ">
-                                MUNEEB
+                                <div className='shrink-0'>
+                            <span style={{fontFamily: 'Playfair Display'}} className=" tracking-tight  font-bold italic  text-[80px] max-sm:text-5xl drop-shadow-xs  max-md:drop-shadow-gray-300    text-slate-950  ">
+                                Muneeb
                             </span>
+                            </div>
                             </ScrollAnimation>
                         </div>
                         
@@ -72,8 +74,8 @@ const Hero = () => {
                         </ScrollAnimation>
                     </div>
                     <div className="relative z-20 flex flex-col items-start ">
-                        <h2 className="font-display font-bold text-3xl max-sm:text-4xl md:text-5xl  drop-shadow-xs  max-md:drop-shadow-gray-300 lg:text-4xl text-black/90 uppercase leading-none max-w-xs md:max-w-md text-left  tracking-tight">
-                            Creative <br /> <TextType
+                        <h2  className=" font-bold text-3xl max-sm:text-4xl md:text-5xl  drop-shadow-xs  max-md:drop-shadow-gray-300 lg:text-4xl text-black/90 uppercase leading-none max-w-xs md:max-w-md text-left  tracking-tight">
+                            Creative <br /><TextType
                                 text={["Frontend", "Backend", "FullStack"]}
                                 typingSpeed={140}
                                 pauseDuration={1500}

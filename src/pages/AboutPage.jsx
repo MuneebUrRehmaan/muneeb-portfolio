@@ -8,7 +8,7 @@ import { ProcessSection } from '../components/ProcessSection'
 const AboutPage = () => {
   return (
     <section>
-      <div className='max-sm:hidden pt-24 '>
+      <div className='max-sm:hidden pt-2 md:pt-20'>
         <AboutHero />
         <TechStackMarquee />
       </div>

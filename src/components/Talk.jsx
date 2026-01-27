@@ -53,8 +53,8 @@ const Talk = () => {
                                     type="text"
                                     id="name"
                                     name="name"
-                                    placeholder="John Doe"
-                                    className="w-full h-14 px-6 rounded-xl border shadow-sm border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
+                                    placeholder="Your name"
+                                    className="w-full h-14 px-6 rounded-xl  shadow-sm border border-[#e2e8f0] bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
                                     required />
                             </div>
 
@@ -64,8 +64,8 @@ const Talk = () => {
                                     type="email"
                                     id="email"
                                     name="email"
-                                    placeholder="john@example.com"
-                                    className="w-full h-14 px-6 rounded-xl shadow-sm border border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
+                                    placeholder="example@gmail.com"
+                                    className="border border-[#e2e8f0] w-full h-14 px-6 rounded-xl shadow-sm  bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
                                     required />
                             </div>
 
@@ -75,7 +75,7 @@ const Talk = () => {
                                     id="message"
                                     name="message"
                                     placeholder="Tell me about your project..."
-                                    className="w-full h-48 p-6 rounded-xl border shadow-sm border-gray-200 bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900 resize-none  hover:border-gray-300"
+                                    className="w-full h-48 p-6 rounded-xl border shadow-sm  border-[#e2e8f0] bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900 resize-none  hover:border-gray-300"
                                     required />
                             </div>
 
