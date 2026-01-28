@@ -22,12 +22,12 @@ const FAQ = () => {
         </div>
 
         {/* Right Side - Accordion */}
-        <div className="lg:col-span-7 flex flex-col gap-5">
+        <div className="lg:col-span-7 flex flex-col gap-3">
           {faq_data.map((item, index) => (
             <div
               key={index}
-              className={`bg-transparent rounded-xl transition-all duration-300 overflow-hidden border-[#e2e8f0] ${openIndex === index
-                  ? ' border-[#e2e8f0]'
+              className={`bg-[#fffc] rounded-xl transition-all duration-300 overflow-hidden border-[#e2e8f0] ${openIndex === index
+                  ? ' border-[#e2e8f0] border'
                   : 'border-[#e2e8f0] border hover:border-gray-200'
                 }`}
             >
@@ -56,7 +56,7 @@ const FAQ = () => {
                   }`}
               >
                 <div className="overflow-hidden">
-                  <p className="text-[#0a0a0a] leading-relaxed text-base md:text-lg pl-18 pr-8 pb-8">
+                  <p className="text-[#0a0a0a] leading-normal text-base md:text-lg pl-18 pr-8 pb-8">
                     {item.answer}
                   </p>
                 </div>

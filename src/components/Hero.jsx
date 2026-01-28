@@ -1,11 +1,11 @@
 import TextType from './TextType.jsx';
-import { bghero, hero, profile2 } from '../constants';
+import { bghero, hero, profile2, profile } from '../constants';
 import ScrollAnimation from "./ScrollAnimation.jsx";
 
 const Hero = () => {
     
     return (
-        <section id='home' className=" relative sm:min-h-screen h-[94vh] w-full bg-[] overflow-hidden flex flex-col justify-end pt-20 pb-10 md:pb-0">
+        <section id='home' className=" relative sm:min-h-screen h-[94vh] w-full bg-[] overflow-hidden flex flex-col justify-end md:pt-20 pt-8 pb-10 md:pb-0">
             {/* <img src={bghero} alt="" className='absolute top-0 w-screen h-screen z-0' /> */}
             {/* Main Content Container */}
             <div className="max-w-7xl relative z-10  mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:block h-full grow">
@@ -19,12 +19,15 @@ const Hero = () => {
                             src={profile2}
                             loading='lazy'
                             alt="Portrait of Muneeb"
-                            className="w-full max-md:ml-20 max-sm:ml-30 lg:h-screen max-md:h-screen h-full  object-cover  object-top md:object-contain "
+                            className="w-full max-md:ml-20 max-sm:ml-40 lg:h-screen max-md:h-screen h-full  object-cover  object-top md:object-contain "
 
                         />
                         </ ScrollAnimation>
                     </div>
                 </div>
+
+                {/* Central Image */}
+                
 
 
 

@@ -36,7 +36,7 @@ const Talk = () => {
         <section id="contact" className="component-gap">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
-                <div className="mb-12 mt-4">
+                <div className="mb-12">
                     <SubHaeading subTitle={'Connect with me'} />
                     <Title title='Lets start a project together' />
                 </div>

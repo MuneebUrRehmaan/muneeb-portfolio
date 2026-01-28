@@ -67,7 +67,7 @@ const About = () => {
 
         <div className="order-1 lg:order-2 relative">
           <ScrollAnimation direction="right" >
-            <div className="relative rounded-xl overflow-hidden shadow-2xl w-auto h-105 max-sm:h-60   group">
+            <div className="relative rounded-xl overflow-hidden w-auto h-105 max-sm:h-60   group">
 
               <video
 

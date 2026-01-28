@@ -7,7 +7,7 @@ import ScrollAnimation from '../components/ScrollAnimation';
 const Projects = () => {
     return (
         <section id="works" className="w-full bg-cream pt-24 pb-24 px-4 max-md:pt-4 md:px-8" >
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto mt-4">
 
                 {/* Section Header */}
                 <SubHaeading subTitle={'My Work'} />

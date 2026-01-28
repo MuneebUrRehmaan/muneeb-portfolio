@@ -42,7 +42,7 @@ const Services = () => {
 
                 {/* Description */}
                 <div className="mt-auto">
-                  <p className="font-sans text-gray-600 leading-relaxed text-base md:text-lg">
+                  <p className="font-sans text-[#0a0a0a] leading-relaxed text-base md:text-lg">
                     {service.description}
                   </p>
                 </div>
