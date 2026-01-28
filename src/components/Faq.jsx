@@ -26,17 +26,17 @@ const FAQ = () => {
           {faq_data.map((item, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl transition-all duration-300 overflow-hidden border-gray-200 ${openIndex === index
-                  ? 'shadow-sm border-gray-200'
-                  : 'border-gray-200 border hover:border-gray-200'
+              className={`bg-transparent rounded-xl transition-all duration-300 overflow-hidden border-[#e2e8f0] ${openIndex === index
+                  ? ' border-[#e2e8f0]'
+                  : 'border-[#e2e8f0] border hover:border-gray-200'
                 }`}
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none border-gray-200"
+                className="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none border-[#e2e8f0]"
                 aria-expanded={openIndex === index}
               >
-                <span className="font-sans text-lg md:text-xl font-medium text-gray-900 pr-8">
+                <span className="font-sans text-lg md:text-xl font-medium text-[#0a0a0a] pr-8">
                   <span className="text-gray-400 mr-6 font-normal inline-block w-8">
                     0{index + 1}.
                   </span>
@@ -44,7 +44,7 @@ const FAQ = () => {
                 </span>
 
                 <span
-                  className={`shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-gray-50 border border-gray-100 transition-transform duration-300 ${openIndex === index ? 'rotate-180 bg-black text-gray-500' : 'text-gray-500'
+                  className={`shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-gray-50 border border-[#e2e8f0] transition-transform duration-300 ${openIndex === index ? 'rotate-180 bg-black text-gray-500' : 'text-gray-500'
                     }`}
                 >
                   <ChevronDown size={18} />
@@ -56,7 +56,7 @@ const FAQ = () => {
                   }`}
               >
                 <div className="overflow-hidden">
-                  <p className="text-gray-500 leading-relaxed text-base md:text-lg pl-18 pr-8 pb-8">
+                  <p className="text-[#0a0a0a] leading-relaxed text-base md:text-lg pl-18 pr-8 pb-8">
                     {item.answer}
                   </p>
                 </div>

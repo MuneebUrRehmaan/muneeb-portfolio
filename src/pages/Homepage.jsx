@@ -14,12 +14,8 @@ import TechStackMarquee from '../components/TechStackMarquee'
 const Homepage = () => {
   return (
     <div>
-      <div className='max-md:hidden'>
-        <Hero />
-        <Logos />
-        <About />
-      </div>
-      <div className='max-md:block hidden overflow-hidden pt-20 max-md:pt-4 pb-0 w-full bg-cream  px-2 md:px-8'>
+    
+      <div className='overflow-hidden pt-20 max-md:pt-4 pb-0 w-full bg-cream  px-2 md:px-8'>
         <AboutHero />
         <TechStackMarquee />
       </div>

@@ -20,7 +20,7 @@ const Logos = () => {
   };
 
   return (
-    <section className="w-full bg-cream-dark py-12 border-y border-gray-200/60 overflow-hidden">
+    <section className="w-full bg-cream-dark py-12 overflow-hidden">
       <ScrollAnimation direction="up" >
       <div
         className="relative w-full flex overflow-hidden mask-image-gradient"

@@ -22,7 +22,7 @@ const Navbar = () => {
 
     return (
         <div className='w-full px-auto'>
-            <nav className={`   md:fixed absolute top-0 left-0 right-0  z-100 transition-all duration-300 border-0 ${isScrolled ? 'sm:bg-[#fffc] sm:backdrop-blur-2xl sm:py-2  sm:border sm:border-[#e2e8f0]   sm:rounded-xl  sm:mx-8  sm:mt-3 ' : 'bg-transparent py-4'}`}>
+            <nav className={`   md:fixed absolute top-0 left-0 right-0  z-100 transition-all duration-300 border-0 ${isScrolled ? 'bg-[#fffc] backdrop-blur-2xl py-2  border-[1.1px] border-[#e2e8f0]   rounded-xl  mx-8  mt-3 ' : 'bg-transparent py-4'}`}>
                 <div className=" mx-auto px-4">
                     <div className="flex items-center h-full justify-between">
                         <div className="shrink-0">

@@ -5,8 +5,8 @@ import ScrollAnimation from "./ScrollAnimation.jsx";
 const Hero = () => {
     
     return (
-        <section id='home' className=" relative sm:min-h-screen h-[94vh] w-full overflow-hidden flex flex-col justify-end pt-20 pb-10 md:pb-0">
-            <img src={bghero} alt="" className='absolute top-0 w-screen h-screen z-0' />
+        <section id='home' className=" relative sm:min-h-screen h-[94vh] w-full bg-[] overflow-hidden flex flex-col justify-end pt-20 pb-10 md:pb-0">
+            {/* <img src={bghero} alt="" className='absolute top-0 w-screen h-screen z-0' /> */}
             {/* Main Content Container */}
             <div className="max-w-7xl relative z-10  mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:block h-full grow">
 

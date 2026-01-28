@@ -22,7 +22,7 @@ const Services = () => {
             <ScrollAnimation direction='up' delay={0.2 * index}   >
               <div
                 key={index}
-                className="group p-8 max-md:p-4 hover:bg-white/50 transition-colors duration-300 flex flex-col h-full"
+                className="group p-8 max-md:p-4 hover:bg-[#fffc] transition-colors duration-300 flex flex-col h-full"
               >
 
 
