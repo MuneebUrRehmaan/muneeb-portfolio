@@ -24,7 +24,7 @@ const Experience = () => {
                <ScrollAnimation direction="left" delay={0.1 * index} >
             <div
               key={index}
-              className="group flex flex-col md:flex-row items-start md:items-center py-3 md:py-8 border-b border-gray-200 hover:border-gray-400 transition-colors duration-300"
+              className="group flex flex-col md:flex-row items-start md:items-center py-3 md:py-8 border-b border-[#e2e8f0] hover:border-gray-400 transition-colors duration-300"
             >
            
 

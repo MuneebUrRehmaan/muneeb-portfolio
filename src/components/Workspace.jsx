@@ -20,14 +20,14 @@ const Workspace = () => {
           {workstation.map(item => (
            
             <div key={`a-${item.id}`} className="shrink-0 w-130 max-sm:w-100 py-4  mr-6 overflow-hidden ">
-              <img src={item.image} loading='lazy' alt={item.alt} className="w-full shadow-md  h-90 max-sm:h-60 object-cover rounded-xl " />
+              <img src={item.image} loading='lazy' alt={item.alt} className="w-full border border-[#e2e8f0]  h-90 max-sm:h-60 object-cover rounded-xl " />
             </div>
             
           ))}
           {/* Duplicate for seamless effect */}
           {workstation.map(item => (
             <div key={`b-${item.id}`} className="shrink-0 w-130 max-sm:w-100 py-4  mr-6 overflow-hidden ">
-              <img src={item.image} loading='lazy' alt={item.alt} className="w-full shadow-md h-90  max-sm:h-60 object-cover rounded-xl " />
+              <img src={item.image} loading='lazy' alt={item.alt} className="w-full border border-[#e2e8f0] h-90  max-sm:h-60 object-cover rounded-xl " />
             </div>
           ))}
         </div>

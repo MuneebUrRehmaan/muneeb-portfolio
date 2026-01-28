@@ -76,7 +76,7 @@ export const ProcessSection = () => {
           <ScrollAnimation key={index} direction="up" delay={0.1 * index} >
           <div
             key={index}
-            className="relative p-8 bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden"
+            className="relative p-8 bg-transparent rounded-xl border border-[#e2e8f0]  overflow-hidden"
           >
             <div className="flex flex-col gap-6 relative z-10">
               <div
@@ -88,7 +88,7 @@ export const ProcessSection = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   {step.title}
                 </h3>
-                <p className="text-base tracking-wide text-gray-800">{step.description}</p>
+                <p className="text-base tracking-wide text-[#0a0a0a]">{step.description}</p>
               </div>
             </div>
 

@@ -25,8 +25,8 @@ const StyledWrapper = styled.div`
     background: #F97316;
     color: white;
     font-family: inherit;
-    padding: 0.35em;
-    padding-left: 1.2em;
+    padding: 0.25em;
+    padding-left: 1em;
     font-size: 17px;
     white-space: nowrap;
     font-weight: 500;

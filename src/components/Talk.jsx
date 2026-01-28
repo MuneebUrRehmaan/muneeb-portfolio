@@ -54,7 +54,7 @@ const Talk = () => {
                                     id="name"
                                     name="name"
                                     placeholder="Your name"
-                                    className="w-full h-14 px-6 rounded-xl  shadow-sm border border-[#e2e8f0] bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
+                                    className="w-full h-14 px-6 rounded-xl  border border-[#e2e8f0] bg-[#fffc] focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
                                     required />
                             </div>
 
@@ -65,7 +65,7 @@ const Talk = () => {
                                     id="email"
                                     name="email"
                                     placeholder="example@gmail.com"
-                                    className="border border-[#e2e8f0] w-full h-14 px-6 rounded-xl shadow-sm  bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
+                                    className="border border-[#e2e8f0] w-full h-14 px-6 rounded-xl   bg-[#fffc] focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900  hover:border-gray-300"
                                     required />
                             </div>
 
@@ -75,7 +75,7 @@ const Talk = () => {
                                     id="message"
                                     name="message"
                                     placeholder="Tell me about your project..."
-                                    className="w-full h-48 p-6 rounded-xl border shadow-sm  border-[#e2e8f0] bg-white focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900 resize-none  hover:border-gray-300"
+                                    className="w-full h-48 p-6 rounded-xl border  border-[#e2e8f0] bg-[#fffc] focus:border-black/50 focus:ring-1 focus:ring-black/5 transition-all duration-300 outline-none placeholder:text-gray-400 text-gray-900 resize-none  hover:border-gray-300"
                                     required />
                             </div>
 
@@ -93,7 +93,7 @@ const Talk = () => {
 
                     <div className="lg:col-span-1">
                         <ScrollAnimation direction="right" delay={0.3} >
-                        <div className="bg-white rounded-xl p-8 shadow-sm border border-[#f8f7f3] h-full flex flex-col">
+                        <div className="bg-[#fffc] rounded-xl p-8  border border-[#e2e8f0] h-full flex flex-col">
 
                             {/* Availability */}
                             <div className="inline-flex items-center gap-3 bg-orange-50 px-4 py-2 rounded-full mb-10 w-fit self-start border border-gray-200">
@@ -106,7 +106,7 @@ const Talk = () => {
 
                             {/* Avatar */}
                             
-                            <div className="w-24 h-24 rounded-full overflow-hidden mb-8 border-2 border-[#fbf9f4] shadow-sm ">
+                            <div className="w-24 h-24 rounded-full overflow-hidden mb-8 border border-[#fbf9f4]  ">
                                 <img
                                     src={menuprofile}
                                     loading='lazy'

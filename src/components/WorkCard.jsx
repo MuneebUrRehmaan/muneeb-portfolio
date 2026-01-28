@@ -4,7 +4,7 @@ const WorkCard = (project) => {
     return (
          
         <div
-            className=" recent-work-item group relative overflow-hidden rounded-xl  bg-gray-100 shadow-sm border border-gray-200"
+                className=" recent-work-item group relative overflow-hidden rounded-xl  bg-transparent  border border-[#e2e8f0]"
             key={project.id}
         >
 
@@ -25,7 +25,7 @@ const WorkCard = (project) => {
             </div>
 
             {/* Overlay */}
-            <div className="flex flex-col justify-end p-4 md:p-6 bg-[#F7FBFC] ">
+            <div className="flex flex-col justify-end p-4 md:p-6 bg-transparent ">
 
                 {/* Slide Up Content */}
                 <div><p  className='text-sm max-sm:text-xs  text-orange-400 font-semibold -mb-1.5'>{project.category}</p></div>

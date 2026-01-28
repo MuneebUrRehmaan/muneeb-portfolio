@@ -85,7 +85,7 @@ const TechStackMarquee = () => {
             {techStack.map((tech, index) => (
               <div
                 key={`${loop}-${index}`}
-                className="flex items-center gap-3 px-4 py-2 bg-white rounded-full shadow-sm border border-gray-100 min-w-max hover:shadow-md transition-shadow group"
+                className="flex items-center gap-3 px-4 py-2 bg-[#fffc] rounded-full border border-[#e2e8f0] min-w-max hover:shadow-md transition-shadow group"
               >
                 <div className="w-4 h-6 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-300">
                   {tech.icon}
