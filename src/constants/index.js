@@ -59,11 +59,11 @@ export const projects = [
     title: "Forever",
     category: "E-Commerce",
     image: pj1,
-    link: "https://forever-frontend-coral.vercel.app/",
+    link: "https://forever-fullstack-x4hy.vercel.app/",
     code: 'https://github.com/muneeburrehmaan/NovaShop.co'
   },
   {
-    id: 2,
+    id: 5,
     title: "Lumiere Restaurent",
     category: "Restaurent Website",
     image: pj7,
@@ -71,7 +71,7 @@ export const projects = [
   },
  
   {
-    id: 3,
+    id: 4,
     title: "Weather Website",
     category: "Weather App",
     image: pj3,
@@ -79,15 +79,15 @@ export const projects = [
     code: 'https://github.com/muneeburrehmaan/Nikey-Shoes-Web'
   },
    {
-    id: 4,
-    title: "QuizFlow",
-    category: "Quiz App",
+    id: 3,
+    title: "Tristack Portfolio",
+    category: "Portfolio",
     image: pj4,
-    link: "https://muneeburrehmaan.github.io/quizflow/",
+    link: "https://trackstack-portfolio.vercel.app/",
   },
 
   {
-    id: 5,
+    id: 3,
     title: "Aurelia",
     category: "Hotel Management ",
     image:pj2,
@@ -105,7 +105,7 @@ export const projects = [
 
 
   {
-    id: 7,
+    id: 8,
     title: "Gallery",
     category: "Gallery project",
     image: pj5,
@@ -114,7 +114,7 @@ export const projects = [
   },
 
    {
-    id: 8,
+    id: 7,
     title: "Bronze & Purple",
     category: "Animated Website",
     image: pj8,
