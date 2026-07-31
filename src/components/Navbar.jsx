@@ -28,7 +28,7 @@ const Navbar = () => {
                         <div className="shrink-0">
                             <ScrollAnimation direction="left">
                             <a
-                                href="/muneeb-portfolio/">
+                                href="/">
                                 <img src={herologo} loading='lazy' alt="" className='w-15' />
                             </a>
                             </ScrollAnimation>

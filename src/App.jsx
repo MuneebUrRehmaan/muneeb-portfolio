@@ -22,7 +22,7 @@ const App = () => {
       <MobileBottomNav />
       <div className="min-h-screen w-full text-gray-900 font-sans selection:bg-orange-200 selection:text-orange-900">
         <Routes>
-          <Route path='/muneeb-portfolio' element={<Homepage />} />
+          <Route path='/' element={<Homepage />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/contact' element={<Contact />} />

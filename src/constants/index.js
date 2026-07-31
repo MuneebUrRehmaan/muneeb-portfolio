@@ -26,7 +26,7 @@ import menuprofile from '../assets/menu-profile.webp'
 
 // Navigation Links
 export const nav_links = [
-  { label: 'Home', href: '/muneeb-portfolio' },
+  { label: 'Home', href: '/' },
   { label: 'Work', href: '/projects' },
   { label: 'About', href: '/about' },
   
