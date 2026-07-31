@@ -15,7 +15,7 @@ const App = () => {
     document.documentElement.style.scrollBehavior = 'smooth';
   }, []);
   return (
-    <div className='relative'>
+    <div className='relative bg-orange-100'>
       <div className='max-sm:hidden'><CustomCursor /></div>
       
      <div className='max-sm:hidden'> <Navbar />  </div>
